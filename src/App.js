@@ -4,7 +4,7 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-import Login from './Pages/Login';
+import Register from './Pages/Register';
 import Homepage from './Pages/Homepage';
 import Welcome from './Pages/Welcome';
 import Dashboard from './Pages/Dashboard';
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Homepage />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>

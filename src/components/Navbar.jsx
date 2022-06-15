@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 import PrimaryButton from './PrimaryButton'
 
@@ -8,7 +9,9 @@ const Navbar = () => {
       <div className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto flex justify-between lg:items-center">
         <article className="flex lg:items-center space-x-8">
           <div>
-            <img src={Logo} alt="Logo" />
+            <Link to="/">
+              <img src={Logo} alt="Logo" />
+            </Link>
           </div>
           <div className="flex space-x-10">
             <article>
@@ -29,16 +32,20 @@ const Navbar = () => {
           </div>
         </article>
         <article className="flex space-x-6">
+
           <PrimaryButton
             text="login"
             type="button"
             className="w-28 h-8 text-sm btn-gradient"
           />
-          <PrimaryButton
-            text="register"
-            type="button"
-            className="w-28 h-8 text-sm btn-gradient"
-          />
+
+          <Link to="register">
+            <PrimaryButton
+              text="register"
+              type="button"
+              className="w-28 h-8 text-sm btn-gradient"
+            />
+          </Link>
         </article>
       </div>
     </nav>

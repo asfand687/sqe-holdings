@@ -1,6 +1,7 @@
 import React from 'react'
 import RegisterSectionTitle from '../components/RegisterSectionTitle'
 import PrimaryButton from '../components/PrimaryButton'
+import { Link } from 'react-router-dom'
 
 const WelcomeSection = () => {
   return (
@@ -96,16 +97,18 @@ const WelcomeSection = () => {
             </article>
             <article>
               <label className="inline-flex items-center">
-                <input type="radio" className="checkbox-round" checked />
+                <input type="radio" className="checkbox-round" checked={false} />
                 <span className="ml-4 text-xl">Others</span>
               </label>
             </article>
             <article className="pt-[3rem]">
-              <PrimaryButton
-                className="lg:max-w-[470px] h-16 text-2xl btn-gradient"
-                text="Bring Me To My SQE Dashboard"
-                type="submit"
-              />
+              <Link to="/dashboard">
+                <PrimaryButton
+                  className="lg:max-w-[470px] h-16 text-2xl btn-gradient"
+                  text="Bring Me To My SQE Dashboard"
+                  type="submit"
+                />
+              </Link>
             </article>
           </div>
         </form>

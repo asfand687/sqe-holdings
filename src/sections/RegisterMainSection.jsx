@@ -1,8 +1,9 @@
 import React from 'react'
 import RegisterSectionTitle from '../components/RegisterSectionTitle'
 import PrimaryButton from '../components/PrimaryButton'
+import { Link } from 'react-router-dom'
 
-const LoginMainSection = () => {
+const RegisterMainSection = () => {
   return (
     <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
@@ -30,11 +31,13 @@ const LoginMainSection = () => {
             <input type="email" className="w-full max-w-[537px] h-10 rounded-[30px] bg-[#DEDEDE] outline-none px-4 text-gray-700" required />
           </div>
           <div className="pt-8">
-            <PrimaryButton
-              className="w-52 h-10 text-2xl btn-gradient"
-              text="Complete"
-              type="submit"
-            />
+            <Link to="/welcome">
+              <PrimaryButton
+                className="w-52 h-10 text-2xl btn-gradient"
+                text="Complete"
+                type="submit"
+              />
+            </Link>
           </div>
         </form>
       </article>
@@ -42,4 +45,4 @@ const LoginMainSection = () => {
   )
 }
 
-export default LoginMainSection
+export default RegisterMainSection
