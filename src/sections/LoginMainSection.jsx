@@ -6,7 +6,7 @@ const LoginMainSection = () => {
   return (
     <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
-        <RegisterSectionTitle />
+        <RegisterSectionTitle text="Register With SQE" />
         <form className="space-y-4">
           <h3 className="text-sm font-medium">*Required Field</h3>
           <div className="space-y-2">
@@ -31,7 +31,7 @@ const LoginMainSection = () => {
           </div>
           <div className="pt-8">
             <PrimaryButton
-              className="w-52 h-10 text-2xl"
+              className="w-52 h-10 text-2xl btn-gradient"
               text="Complete"
               type="submit"
             />

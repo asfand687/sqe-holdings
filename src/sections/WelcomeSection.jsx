@@ -6,7 +6,7 @@ const WelcomeSection = () => {
   return (
     <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
-        <RegisterSectionTitle className="pb-8" />
+        <RegisterSectionTitle text="Register With SQE" className="pb-8" />
         <form className="space-y-4">
           <h3 className="font-jost font-medium text-2xl">Select which SQE Features you are interested in:</h3>
           <div className="space-y-2">
@@ -102,7 +102,7 @@ const WelcomeSection = () => {
             </article>
             <article className="pt-[3rem]">
               <PrimaryButton
-                className="lg:max-w-[470px] h-16 text-2xl"
+                className="lg:max-w-[470px] h-16 text-2xl btn-gradient"
                 text="Bring Me To My SQE Dashboard"
                 type="submit"
               />

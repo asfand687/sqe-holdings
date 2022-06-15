@@ -7,6 +7,7 @@ import {
 import Login from './Pages/Login';
 import Homepage from './Pages/Homepage';
 import Welcome from './Pages/Welcome';
+import Dashboard from './Pages/Dashboard';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/" element={<Homepage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/welcome" element={<Welcome />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
         <Footer />
       </BrowserRouter>

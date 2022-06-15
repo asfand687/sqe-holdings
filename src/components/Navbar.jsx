@@ -32,12 +32,12 @@ const Navbar = () => {
           <PrimaryButton
             text="login"
             type="button"
-            className="w-28 h-8 text-sm"
+            className="w-28 h-8 text-sm btn-gradient"
           />
           <PrimaryButton
             text="register"
             type="button"
-            className="w-28 h-8 text-sm"
+            className="w-28 h-8 text-sm btn-gradient"
           />
         </article>
       </div>
