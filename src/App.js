@@ -5,6 +5,8 @@ import {
   Routes
 } from "react-router-dom";
 import Login from './Pages/Login';
+import Homepage from './Pages/Homepage';
+import Welcome from './Pages/Welcome';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -14,7 +16,9 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Login />} />
+          <Route exact path="/" element={<Homepage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/welcome" element={<Welcome />} />
         </Routes>
         <Footer />
       </BrowserRouter>

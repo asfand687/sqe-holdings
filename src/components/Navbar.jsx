@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
+import PrimaryButton from './PrimaryButton'
 
 const Navbar = () => {
   return (
@@ -28,16 +29,16 @@ const Navbar = () => {
           </div>
         </article>
         <article className="flex space-x-6">
-          <button
+          <PrimaryButton
+            text="login"
             type="button"
-            className="btn-gradient w-28 h-8 text-white rounded-full text-center hover:opacity-80 transition-opacity ease-in-out">
-            login
-          </button>
-          <button
+            className="w-28 h-8 text-sm"
+          />
+          <PrimaryButton
+            text="register"
             type="button"
-            className="btn-gradient w-28 h-8 text-white rounded-full text-center hover:opacity-80 transition-opacity ease-in-out">
-            register
-          </button>
+            className="w-28 h-8 text-sm"
+          />
         </article>
       </div>
     </nav>
