@@ -1,8 +1,8 @@
 import React from 'react'
 import Search from '../assets/search.svg'
 import Location from '../assets/location.svg'
-import Block1 from '../assets/blocks-01.png'
-import Block2 from '../assets/blocks-02.png'
+import Block2 from '../assets/blocks-01.png'
+import Block1 from '../assets/blocks-02.png'
 
 const HomeIntroSection = () => {
   return (
