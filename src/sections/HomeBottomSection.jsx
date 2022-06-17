@@ -13,17 +13,30 @@ const HomeBottomSection = () => {
       </h2>
       <div className="p-6 lg:p-20 bg-[#031840] text-white">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <article className="justify-self-end">
+          <article className="relative justify-self-end">
             <img className="w-full max-w-[529px] h-[480px]" src={HomeGrid1} alt="No-Code App Development" />
+            <p className="text-white font-jost font-semibold text-3xl text-center absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] leading-10">
+              No-Code App <br /> Development
+            </p>
           </article>
-          <article>
+          <article className="relative">
             <img className="w-full max-w-[529px] h-[480px]" src={HomeGrid2} alt="No-Code App Development" />
+            <p className="text-white font-jost font-semibold text-3xl text-center absolute top-[50%] left-[50%] transform translate-x-[-80%] translate-y-[-50%] leading-10">
+              Smart Contracts
+            </p>
           </article>
-          <article className="justify-self-end">
+          <article className="relative justify-self-end">
             <img className="w-full max-w-[529px] h-[480px]" src={HomeGrid3} alt="No-Code App Development" />
+            <p className="text-white font-jost font-semibold text-3xl text-center absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] leading-10">
+              NFT <br /> Marketplace
+            </p>
           </article>
-          <article>
+          <article className="relative">
             <img className="w-full max-w-[529px] h-[480px]" src={HomeGrid4} alt="No-Code App Development" />
+            <p className="text-white font-jost font-semibold text-3xl text-center absolute top-[50%] left-[50%] transform translate-x-[-80%] translate-y-[-50%] leading-10">
+              Be Part Of The <br /> Network
+            </p>
+            <p className="absolute bottom-2 left-[50%] transform -translate-x-[95%] font-semibold">All Coins Are NFTs</p>
           </article>
         </div>
       </div>

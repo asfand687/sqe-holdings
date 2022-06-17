@@ -33,10 +33,18 @@
   background-color: #1787ff6c;
 }
 
+
+
+
 .hero-bg {
   min-height: 653px;
   width: 100%;
-  background: url("./assets//hero-bg.png") no-repeat center center/cover;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.44)),
+    url("./assets//hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-gradient {

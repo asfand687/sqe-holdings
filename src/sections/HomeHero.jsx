@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.png'
+import LogoBig from '../assets/logo-big.png'
 
 const HomeHero = () => {
   return (
@@ -7,6 +8,9 @@ const HomeHero = () => {
       <article className="space-y-3">
         <h1 className="font-saxmono text-5xl">SQEHOLDINGS</h1>
         <p className="text-lg">A Digital Platform For All.</p>
+      </article>
+      <article className="self-center">
+        <img src={LogoBig} alt="Logo" />
       </article>
       <article>
         <img src={Logo} alt="Logo" />
