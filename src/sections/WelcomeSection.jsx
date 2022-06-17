@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import RegisterSectionTitle from '../components/RegisterSectionTitle'
 import PrimaryButton from '../components/PrimaryButton'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase'
 import toast from 'react-hot-toast'
 import { signOut } from '@firebase/auth'
@@ -10,11 +10,6 @@ import { db } from '../firebase'
 
 const WelcomeSection = () => {
   const navigate = useNavigate()
-
-  const getUser = async () => {
-    const user = await getDoc(doc(db, 'users', auth.currentUser.uid))
-    if (user.data().secondPhaseComplete) navigate('/dashboard')
-  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -25,6 +20,12 @@ const WelcomeSection = () => {
   }
 
   useEffect(() => {
+
+    const getUser = async () => {
+      const user = await getDoc(doc(db, 'users', auth.currentUser.uid))
+      if (user.data().secondPhaseComplete) navigate('/dashboard')
+    }
+
     if (!auth?.currentUser?.emailVerified) {
       toast.error("Your email is not verified, please verify your email", {
         id: 'unverified'
@@ -33,7 +34,7 @@ const WelcomeSection = () => {
       navigate('/')
     }
     getUser()
-  }, [])
+  }, [navigate])
   return (
     <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">

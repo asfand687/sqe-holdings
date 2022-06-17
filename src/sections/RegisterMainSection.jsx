@@ -1,15 +1,12 @@
 import React, { useState } from 'react'
 import RegisterSectionTitle from '../components/RegisterSectionTitle'
 import PrimaryButton from '../components/PrimaryButton'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 import { collection, setDoc, doc } from '@firebase/firestore'
 
 import {
   createUserWithEmailAndPassword,
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  signOut,
   sendEmailVerification
 } from '@firebase/auth'
 

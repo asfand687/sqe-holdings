@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import RegisterSectionTitle from '../components/RegisterSectionTitle'
 import PrimaryButton from '../components/PrimaryButton'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import {
   signInWithEmailAndPassword,
 } from '@firebase/auth'
@@ -19,15 +19,12 @@ const Login = () => {
     }
   )
 
-  const getUser = async () => {
-    const user = await getDoc(doc(db, 'users', auth.currentUser.uid))
-    if (user.data().secondPhaseComplete) navigate('/dashboard')
-  }
+
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const user = await signInWithEmailAndPassword(auth, loginData.email, loginData.password)
+      await signInWithEmailAndPassword(auth, loginData.email, loginData.password)
       const userData = await getDoc(doc(db, 'users', auth.currentUser.uid))
       if (userData.data().secondPhaseComplete) { return navigate('/dashboard') }
       setLoginData({
