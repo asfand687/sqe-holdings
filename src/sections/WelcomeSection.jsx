@@ -105,6 +105,12 @@ const WelcomeSection = () => {
             <article>
               <label className="inline-flex items-center">
                 <input type="radio" className="checkbox-round" />
+                <span className="ml-4 text-xl">Create Giftcard</span>
+              </label>
+            </article>
+            <article>
+              <label className="inline-flex items-center">
+                <input type="radio" className="checkbox-round" />
                 <span className="ml-4 text-xl">International Money Exchange</span>
               </label>
             </article>
@@ -118,12 +124,6 @@ const WelcomeSection = () => {
               <label className="inline-flex items-center">
                 <input type="radio" className="checkbox-round" />
                 <span className="ml-4 text-xl">How-To Videos & Tutorials</span>
-              </label>
-            </article>
-            <article>
-              <label className="inline-flex items-center">
-                <input type="radio" className="checkbox-round" />
-                <span className="ml-4 text-xl">Become Mobile Miner</span>
               </label>
             </article>
             <article>

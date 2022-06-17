@@ -40,23 +40,27 @@ const Navbar = () => {
           </div>
         </article>
         <article className="flex space-x-6">
-          {!auth.currentUser && <Link to="login">
-            <PrimaryButton
-              text="login"
-              type="button"
-              className="w-28 h-8 text-sm btn-gradient"
-            />
-          </Link>}
-
-          <Link to="register">
-            <PrimaryButton
-              text="register"
-              type="button"
-              className="w-28 h-8 text-sm btn-gradient"
-            />
-          </Link>
-          {
-            auth.currentUser && <div onClick={logout}><PrimaryButton text="signout" type="button" className="w-28 h-8 text-sm bg-red-400" /></div>
+          {!auth.currentUser ?
+            (
+              <>
+                <Link to="/login">
+                  <PrimaryButton
+                    text="login"
+                    type="button"
+                    className="w-28 h-8 text-sm btn-gradient"
+                  />
+                </Link>
+                <Link to="register">
+                  <PrimaryButton
+                    text="register"
+                    type="button"
+                    className="w-28 h-8 text-sm btn-gradient"
+                  />
+                </Link>
+              </>
+            ) : (
+              <div onClick={logout}><PrimaryButton text="signout" type="button" className="w-28 h-8 text-sm bg-red-400" /></div>
+            )
           }
         </article>
       </div>
