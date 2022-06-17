@@ -59,7 +59,18 @@ const Navbar = () => {
                 </Link>
               </>
             ) : (
-              <div onClick={logout}><PrimaryButton text="signout" type="button" className="w-28 h-8 text-sm bg-red-400" /></div>
+              <>
+                <Link to="/dashboard">
+                  <PrimaryButton
+                    text="dashboard"
+                    type="button"
+                    className="w-28 h-8 text-sm btn-gradient"
+                  />
+                </Link>
+                <div onClick={logout}>
+                  <PrimaryButton text="signout" type="button" className="w-28 h-8 text-sm bg-red-400" />
+                </div>
+              </>
             )
           }
         </article>
