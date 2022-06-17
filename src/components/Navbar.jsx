@@ -1,9 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../assets/logo.png'
 import PrimaryButton from './PrimaryButton'
+import { auth } from '../firebase'
+import { signOut } from '@firebase/auth'
+
 
 const Navbar = () => {
+  const navigate = useNavigate()
+  const logout = async () => {
+    await signOut(auth)
+    navigate("/")
+  }
   return (
     <nav className="py-2 text-sm">
       <div className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto flex justify-between lg:items-center">
@@ -32,12 +40,13 @@ const Navbar = () => {
           </div>
         </article>
         <article className="flex space-x-6">
-
-          <PrimaryButton
-            text="login"
-            type="button"
-            className="w-28 h-8 text-sm btn-gradient"
-          />
+          {!auth.currentUser && <Link to="login">
+            <PrimaryButton
+              text="login"
+              type="button"
+              className="w-28 h-8 text-sm btn-gradient"
+            />
+          </Link>}
 
           <Link to="register">
             <PrimaryButton
@@ -46,6 +55,9 @@ const Navbar = () => {
               className="w-28 h-8 text-sm btn-gradient"
             />
           </Link>
+          {
+            auth.currentUser && <div onClick={logout}><PrimaryButton text="signout" type="button" className="w-28 h-8 text-sm bg-red-400" /></div>
+          }
         </article>
       </div>
     </nav>

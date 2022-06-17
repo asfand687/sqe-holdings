@@ -4,6 +4,7 @@ import TransactionStats from '../sections/TransactionStats'
 import HomeIntroSection from '../sections/HomeIntroSection'
 import HomeBottomSection from '../sections/HomeBottomSection'
 
+
 const Homepage = () => {
   return (
     <>
