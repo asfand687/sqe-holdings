@@ -4,13 +4,11 @@ import PrimaryButton from '../components/PrimaryButton'
 
 const HomeBottomSection = () => {
   return (
-    <section className="text-white bg-[#031840]">
-
-
-      <div className="h-[600px] bg-home-bottom flex flex-col justify-center items-center">
-        <h2 className="font-helvetica text-5xl uppercase font-bold text-center">Our Network</h2>
-        <article className="py-6 text-lg font-normal">
-          <p className=" pb-6">
+    <section className="text-white bg-[#041330]">
+      <h2 className="font-helvetica text-5xl uppercase font-bold text-center bg-transparent">Our Network</h2>
+      <div className="h-[700px] bg-home-bottom flex flex-col justify-center items-center">
+        <article className="text-lg font-normal">
+          <p className="pb-6">
             SQE was designed to be hyper efficient, ultra secure and low cost. We use:
           </p>
           <ul className="leading-6 list-disc pl-6">

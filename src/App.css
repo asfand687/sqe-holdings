@@ -64,7 +64,10 @@
 }
 
 .bg-home-bottom {
-  background: url("./assets/sqe1.png") no-repeat center center/cover;
+  background-color: #041330;
+  background-image: url("./assets/sqe1.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 100%;
 }
 
