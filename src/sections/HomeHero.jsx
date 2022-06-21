@@ -1,20 +1,16 @@
 import React from 'react'
-import Logo from '../assets/logo.png'
 import LogoBig from '../assets/logo-big.png'
 
 const HomeHero = () => {
   return (
-    <section className="hero-bg p-6 lg:p-20 text-white flex flex-col justify-between">
-      <article className="space-y-3">
-        <h1 className="font-saxmono text-5xl">SQEHOLDINGS</h1>
-        <p className="text-lg">A Digital Platform For All.</p>
+    <section className="hero-bg p-6 lg:py-16 text-white flex">
+      <article className="flex-1 flex flex-col items-center">
+        <img className="w-64 h-80" src={LogoBig} alt="Logo" />
+        <h2 className="font-jost text-9xl pt-6 pb-2">SQE</h2>
+        <p className='text-lg'>A DIGITAL PLATFORM FOR ALL</p>
       </article>
-      <article className="self-center">
-        <img src={LogoBig} alt="Logo" />
-      </article>
-      <article>
-        <img src={Logo} alt="Logo" />
-      </article>
+      <article className="flex-1"></article>
+
     </section>
   )
 }

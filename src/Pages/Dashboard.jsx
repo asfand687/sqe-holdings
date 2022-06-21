@@ -8,7 +8,7 @@ import Rainbow from '../assets/rainbow.png'
 
 const Dashboard = () => {
   return (
-    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white relative">
+    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white relative min-h-[calc(100vh-234px)">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
         <RegisterSectionTitle text="My SQE Dashboard" className="pb-8" />
         <aside className="absolute right-5 top-10">

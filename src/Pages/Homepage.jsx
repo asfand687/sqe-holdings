@@ -3,6 +3,7 @@ import HomeHero from '../sections/HomeHero'
 import TransactionStats from '../sections/TransactionStats'
 import HomeIntroSection from '../sections/HomeIntroSection'
 import HomeBottomSection from '../sections/HomeBottomSection'
+import ServicesSection from '../sections/ServicesSection'
 
 
 const Homepage = () => {
@@ -11,6 +12,7 @@ const Homepage = () => {
       <HomeHero />
       <TransactionStats />
       <HomeIntroSection />
+      <ServicesSection />
       <HomeBottomSection />
     </>
   )

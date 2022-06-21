@@ -65,7 +65,7 @@ const RegisterMainSection = () => {
 
 
   return (
-    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white">
+    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white min-h-[calc(100vh-234px)">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
         <RegisterSectionTitle text="Register With SQE" />
         <form onSubmit={handleSubmit} className="space-y-4">

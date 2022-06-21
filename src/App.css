@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'saxono';
-  src: local('saxmono'), url("./assets/saxmono.ttf") format('truetype');
-}
-
-
-.font-saxmono {
-  font-family: 'saxmono';
-}
-
 .flex-2 {
   flex: 2;
 }
@@ -39,12 +29,12 @@
 .hero-bg {
   min-height: 653px;
   width: 100%;
+  background-color: #041330;
   background-image:
     linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.44)),
-    url("./assets//hero-bg.png");
+    url("./assets/hero-bg.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center right;
 }
 
 .bg-gradient {
@@ -52,11 +42,29 @@
 }
 
 .bg-hexagon {
-  background: url("./assets//hexagon.png") no-repeat center center/contain;
+  background: url("./assets/intro-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -10% 50%;
+}
+
+.bg-hex {
+  background: url("./assets/hexagon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-bg {
+  background-color: #041330;
+  background-image: url("./assets/services-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
 }
 
 .bg-home-bottom {
-  background: url("./assets//sqe1.png") no-repeat center center/cover;
+  background: url("./assets/sqe1.png") no-repeat center center/cover;
   background-size: 100%;
 }
 

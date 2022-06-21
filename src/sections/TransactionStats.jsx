@@ -2,30 +2,30 @@ import React from 'react'
 
 const TransactionStats = () => {
   return (
-    <section className="bg-gradient text-[22px] text-white flex px-4 lg:px-0">
-      <article className="flex justify-center space-x-6 items-center flex-1 px-4 border-r border-white py-10">
-        <p className="leading-6 font-saxmono">
-          Transactions<br /> Per Second
+    <section className="bg-[#001B48] text-[22px] text-white flex px-4 py-6 lg:px-12 text-center">
+      <article className="flex-1 px-4 border-r-2 border-white space-y-6">
+        <h2 className="text-[#18A6EE] font-bold text-3xl">100,000</h2>
+        <p className="leading-6 text-xl">
+          possible transactions <br /> per second
         </p>
-        <h3 className="font-bold text-3xl">100</h3>
       </article>
-      <article className="flex justify-center space-x-6 items-center flex-2 px-4 border-r border-white py-10">
-        <p className="leading-6 font-saxmono">
-          Total<br /> Transactions
+      <article className="flex-1 px-4 border-r-2 border-white space-y-6">
+        <h2 className="text-[#18A6EE] font-bold text-3xl">0</h2>
+        <p className="leading-6 text-xl">
+          carbon <br /> footprint
         </p>
-        <h3 className="font-bold text-3xl">50,000,000</h3>
       </article>
-      <article className="flex justify-center space-x-6 items-center  flex-2 px-4 border-r border-white py-10">
-        <p className="leading-6 font-saxmono">
-          Avg. Cost Per<br /> Transaction
+      <article className="flex-1 px-4 border-r-2 border-white space-y-6">
+        <h2 className="text-[#18A6EE] font-bold text-3xl">1000</h2>
+        <p className="leading-6 text-xl">
+          active <br /> users
         </p>
-        <h3 className="font-bold text-3xl">$0.0050</h3>
       </article>
-      <article className="flex justify-center space-x-6 items-center  flex-1 px-4 py-10">
-        <p className="leading-6 font-saxmono">
-          Transactions<br /> Per Second
+      <article className="flex-1 px-4 border-r-2 border-transparent space-y-6">
+        <h2 className="text-[#18A6EE] font-bold text-3xl">10,000</h2>
+        <p className="leading-6 text-xl">
+          international <br /> miners
         </p>
-        <h3 className="font-bold text-3xl">100</h3>
       </article>
     </section>
   )

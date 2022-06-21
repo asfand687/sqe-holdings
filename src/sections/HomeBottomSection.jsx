@@ -1,49 +1,15 @@
 import React from 'react'
-import HomeGrid1 from '../assets/home-grid-01.png'
-import HomeGrid2 from '../assets/home-grid-02.png'
-import HomeGrid3 from '../assets/home-grid-03.png'
-import HomeGrid4 from '../assets/home-grid-04.png'
+
 import PrimaryButton from '../components/PrimaryButton'
 
 const HomeBottomSection = () => {
   return (
     <section className="text-white bg-[#031840]">
-      <h2 className="text-3xl font-medium py-6 bg-gradient font-jost text-center">
-        SQE makes blockchain simple for everyone.
-      </h2>
-      <div className="p-6 lg:p-20 bg-[#031840] text-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <article className="relative justify-self-end">
-            <img className="w-full max-w-[529px] h-[480px]" src={HomeGrid1} alt="No-Code App Development" />
-            <p className="text-white font-jost font-semibold text-3xl text-center absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] leading-10">
-              No-Code App <br /> Development
-            </p>
-          </article>
-          <article className="relative">
-            <img className="w-full max-w-[529px] h-[480px]" src={HomeGrid2} alt="No-Code App Development" />
-            <p className="text-white font-jost font-semibold text-3xl text-center absolute top-[50%] left-[50%] transform translate-x-[-80%] translate-y-[-50%] leading-10">
-              Smart Contracts
-            </p>
-          </article>
-          <article className="relative justify-self-end">
-            <img className="w-full max-w-[529px] h-[480px]" src={HomeGrid3} alt="No-Code App Development" />
-            <p className="text-white font-jost font-semibold text-3xl text-center absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] leading-10">
-              NFT <br /> Marketplace
-            </p>
-          </article>
-          <article className="relative">
-            <img className="w-full max-w-[529px] h-[480px]" src={HomeGrid4} alt="No-Code App Development" />
-            <p className="text-white font-jost font-semibold text-3xl text-center absolute top-[50%] left-[50%] transform translate-x-[-80%] translate-y-[-50%] leading-10">
-              Be Part Of The <br /> Network
-            </p>
-            <p className="absolute bottom-2 left-[50%] transform -translate-x-[95%] font-semibold">All Coins Are NFTs</p>
-          </article>
-        </div>
-      </div>
+
 
       <div className="h-[600px] bg-home-bottom flex flex-col justify-center items-center">
-        <h2 className="font-saxmono text-5xl text-center">Our Network</h2>
-        <article className="py-6 text-lg font-medium">
+        <h2 className="font-helvetica text-5xl uppercase font-bold text-center">Our Network</h2>
+        <article className="py-6 text-lg font-normal">
           <p className=" pb-6">
             SQE was designed to be hyper efficient, ultra secure and low cost. We use:
           </p>
