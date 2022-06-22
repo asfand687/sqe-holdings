@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import RegisterSectionTitle from '../components/RegisterSectionTitle'
 import QRCode from '../assets/qr-code.svg'
 import PrimaryButton from '../components/PrimaryButton'
 import Fox from '../assets/fox.svg'
 import Shield from '../assets/shield.svg'
 import Rainbow from '../assets/rainbow.png'
+import { Link } from 'react-router-dom'
+import { auth, db } from '../firebase'
+import { getDoc, doc } from '@firebase/firestore'
 
 const Dashboard = () => {
+  const [user, setUser] = useState({})
+  useEffect(() => {
+    const getUserInfo = async () => {
+      const userData = await getDoc(doc(db, 'users', auth.currentUser.uid))
+      setUser(userData.data())
+    }
+    getUserInfo()
+  }, [])
   return (
     <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white relative min-h-[calc(100vh-234px)">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
@@ -16,12 +27,14 @@ const Dashboard = () => {
         </aside>
         <article className='flex pb-8'>
           <div className='flex-1 space-y-2 text-2xl'>
-            <p className="pl-4">Username</p>
-            <PrimaryButton
-              type="button"
-              text="Update Security/Password"
-              className="h-11 w-full lg:max-w-[364px] text-2xl bg-[#1786FF]"
-            />
+            <p className="pl-4">{user?.username}</p>
+            <Link to="/update-password">
+              <PrimaryButton
+                type="button"
+                text="Update Security/Password"
+                className="h-11 w-full lg:max-w-[364px] text-2xl bg-[#1786FF]"
+              />
+            </Link>
             <div className="py-4 space-y-2 pl-4">
               <p>SQC Owned: xx</p>
               <p>NFTs Owned: xx</p>

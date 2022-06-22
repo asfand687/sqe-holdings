@@ -12,6 +12,7 @@ import Dashboard from './Pages/Dashboard';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { Toaster } from 'react-hot-toast'
+import UpdatePassword from './Pages/UpdatePassword';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/update-password" element={<UpdatePassword />} />
         </Routes>
         <Footer />
       </BrowserRouter>
