@@ -1,35 +1,25 @@
 import React from 'react'
 
-import PrimaryButton from '../components/PrimaryButton'
-
 const HomeBottomSection = () => {
   return (
-    <section className="text-white bg-[#041330]">
-      <h2 className="font-helvetica text-5xl uppercase font-bold text-center bg-transparent">Our Network</h2>
-      <div className="h-[700px] bg-home-bottom flex flex-col justify-center items-center">
-        <article className="text-lg font-normal">
-          <p className="pb-6">
+    <section className="text-white bg-[#0E2043]">
+      <div className="h-[650px] bg-home-bottom flex lg:px-20 justify-center items-center lg:space-x-10">
+        <article className="space-y-4">
+          <h2 className="text-7xl font-bold">Our Network</h2>
+          <p className="text-4xl font-medium max-w-lg">
             SQE was designed to be hyper efficient, ultra secure and low cost. We use:
           </p>
-          <ul className="leading-6 list-disc pl-6">
+        </article>
+        <article className="text-2xl font-normal">
+          <h2 className="text-3xl font-semibold">We use:</h2>
+          <ul className="leading-7 list-disc pl-6 max-w-xl">
             <li>Proof of Knowledge (PoK)</li>
             <li>Distributed and sustainable mining network</li>
             <li>Only one block per transaction</li>
             <li>Advanced patented innovations</li>
             <li>Processing speeds up to 100,000 Transactions per Second (TPS)</li>
           </ul>
-          <div className="flex justify-center gap-8 pt-10 flex-wrap">
-            <PrimaryButton
-              text="Learn More"
-              type="button"
-              className="h-16 w-80 text-2xl btn-gradient"
-            />
-            <PrimaryButton
-              text="Register"
-              type="button"
-              className="h-16 w-80 text-2xl btn-gradient"
-            />
-          </div>
+
         </article>
       </div>
 

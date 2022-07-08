@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo-nav.png'
 import PrimaryButton from './PrimaryButton'
 import { auth } from '../firebase'
 import { signOut } from '@firebase/auth'
@@ -15,28 +15,25 @@ const Navbar = () => {
   return (
     <nav className="py-2 text-sm">
       <div className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto flex justify-between lg:items-center">
-        <article className="flex lg:items-center space-x-8">
+        <article className="flex lg:items-center space-x-8 text-base text-[#01165C]">
           <div>
-            <Link to="/">
+            <Link className="flex" to="/">
               <img src={Logo} alt="Logo" />
             </Link>
           </div>
           <div className="flex space-x-10">
+            <Link to="/about">
+              About
+            </Link>
             <article>
-              Item
+              Services
             </article>
             <article>
-              Item
+              Learning Center
             </article>
-            <article>
-              Item
-            </article>
-            <article>
-              Item
-            </article>
-            <article>
-              Item
-            </article>
+            <Link to="/contact">
+              Contact
+            </Link>
           </div>
         </article>
         <article className="flex space-x-6">
