@@ -6,7 +6,7 @@ import Line from '../assets/line.svg'
 
 const HomeIntroSection = () => {
   return (
-    <section className="lg:py-20 bg-[#031840] text-white">
+    <section className="lg:py-20 bg-[#020B1D] text-white">
       <div className='bg-hexagon'>
         <div className="w-full relative lg:max-w-7xl mx-auto lg:space-y-20">
           <div className="absolute top-[36%] left-[26%]">

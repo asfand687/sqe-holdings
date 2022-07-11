@@ -4,7 +4,7 @@ import React from 'react'
 const ServicesSection = () => {
   return (
     <>
-      <section className="py-20 relative bg-[#020E26] text-white services-bg">
+      <section className="py-20 relative bg-[#020E26] text-white services-bg h-[1300px]">
         <div className="py-20 realtive z-10">
           <h2 className=" uppercase font-bold text-5xl text-center pb-4">Services</h2>
           <article className="flex justify-center gap-x-10">

@@ -78,7 +78,7 @@
 }
 
 .about-bg {
-  background-color: #041330;
+  background-color: #020B1D;
   background-image:
     url("./assets/about-bg.png");
   background-repeat: no-repeat;
@@ -106,16 +106,18 @@
 
 .services-bg {
   background-color: #041330;
-  background-image: url("./assets/services-bg.png");
+  background-image: url("./assets/services-bg-cropped.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.bg-home-bottom {
-  background-color: #041330;
-  background-image: url("./assets/sqe1.png");
+.services-bg-full {
+  background-image: url("./assets/services-bg-cropped-sm.png");
+}
 
+.bg-home-bottom {
+  background-image: url("./assets/sqe1.png");
   background-position: center;
   background-size: 100%;
 }

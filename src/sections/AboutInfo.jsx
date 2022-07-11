@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutInfo = () => {
   return (
-    <div className="bg-[#041330] text-white">
+    <div className="bg-[#020B1D] text-white pb-20">
       <section className="about-info-bg h-[600px]">
         <article className="w-full max-w-5xl mx-auto flex items-center h-full flex-row-reverse">
           <div className="text-right space-y-8">
