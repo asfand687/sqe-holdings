@@ -22,16 +22,16 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex space-x-10">
-            <Link to="/about">
+            <Link className="font-montserrat" to="/about">
               About
             </Link>
-            <article>
+            <article className="font-montserrat">
               Services
             </article>
-            <article>
+            <article className="font-montserrat">
               Learning Center
             </article>
-            <Link to="/contact">
+            <Link className="font-montserrat" to="/contact">
               Contact
             </Link>
           </div>

@@ -40,7 +40,7 @@ const WelcomeSection = () => {
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
         <RegisterSectionTitle text="Register With SQE" className="pb-8" />
         <form onSubmit={handleSubmit} className="space-y-4">
-          <h3 className="font-jost font-medium text-2xl">Select which SQE Features you are interested in:</h3>
+          <h3 className=" font-medium text-2xl">Select which SQE Features you are interested in:</h3>
           <div className="space-y-2">
             <article>
               <label className="inline-flex items-center">
