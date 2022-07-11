@@ -4,15 +4,15 @@ import { ReactComponent as Instagram } from '../assets/insta-big.svg'
 
 const ContactHero = () => {
   return (
-    <section className="relative bg-[#00112E] filter backdrop-brightness-200 text-white">
-      <div className="about-bg h-[300px]">
+    <section className="relative bg-[#020B1D] text-white">
+      <div className="about-bg h-[500px]">
         <div className="w-full max-w-7xl mx-auto relative z-10 py-20">
-          <h1 className="text-7xl font-semibold pb-10">Contact</h1>
+          <h1 className="text-7xl font-semibold pt-8">Contact</h1>
         </div>
       </div>
       <article className="w-full max-w-7xl mx-auto">
-        <div className="bg-[#385284] relative -top-32  rounded-3xl p-8 shadow-2xl custom-shadow">
-          <form className="space-y-2">
+        <div className="bg-[#385284] relative -top-64 rounded-3xl p-8 shadow-2xl custom-shadow">
+          <form className="space-y-3">
             <article className="flex space-x-4">
               <input type="text" placeholder="first name" className="flex-1 bg-transparent border-2 text-lg font-medium outline-none placeholder-white border-white rounded-full p-2 px-4" />
               <input type="text" placeholder="first name" className="flex-1 bg-transparent border-2 text-lg font-medium outline-none placeholder-white border-white rounded-full p-2 px-4" />

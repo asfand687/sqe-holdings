@@ -40,14 +40,13 @@ const AboutInfo = () => {
         </article>
         <article className="w-[382px] h-[480px] rounded-3xl p-8 py-10 bg-[#375284] space-y-4 custom-shadow-sm">
           <h2 className="font-semibold max-w-[100px] text-5xl leading-tight">We Use:</h2>
-          <p className="text-xl">
-            <ul className="leading-7 list-disc pl-6">
-              <li>Proof of Knowledge (PoK)</li>
-              <li>Distributed and sustainable mining network</li>
-              <li>Only one block per transaction</li>
-              <li>Advanced patented innovations</li>
-              <li>Processing speeds up to 100,000 Transactions per Second (TPS)</li>
-            </ul></p>
+          <ul className="leading-7 text-xl list-disc pl-6">
+            <li>Proof of Knowledge (PoK)</li>
+            <li>Distributed and sustainable mining network</li>
+            <li>Only one block per transaction</li>
+            <li>Advanced patented innovations</li>
+            <li>Processing speeds up to 100,000 Transactions per Second (TPS)</li>
+          </ul>
         </article>
       </section>
     </div>
