@@ -8,7 +8,6 @@ const HomeHero = () => {
         <img className="w-64 h-80" src={LogoBig} alt="Logo" />
         <h2 className='text-4xl font-semibold'>A digital platform for all</h2>
       </article>
-
     </section>
   )
 }

@@ -5,11 +5,11 @@ import AboutInfo from '../sections/AboutInfo'
 
 const About = () => {
   return (
-    <>
+    <main className="bg-[#071328]">
       <AboutHero />
       <AboutInfo />
       <AboutCostSection />
-    </>
+    </main>
   )
 }
 

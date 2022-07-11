@@ -69,7 +69,6 @@
 
 .hero-bg {
   width: 100%;
-  background-color: #041330;
   background-image:
     url("./assets/hero-bg.png");
   background-repeat: no-repeat;
@@ -78,7 +77,6 @@
 }
 
 .about-bg {
-  background-color: #020B1D;
   background-image:
     url("./assets/about-bg.png");
   background-repeat: no-repeat;
@@ -106,15 +104,14 @@
 }
 
 .services-bg {
-  background-color: #041330;
-  background-image: url("./assets/services-bg-cropped.png");
+  background-image: url("./assets/services-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .services-bg-full {
-  background-image: url("./assets/services-bg-cropped-sm.png");
+  background-image: url("./assets/services-bg.png");
 }
 
 .bg-home-bottom {
@@ -139,7 +136,6 @@
 }
 
 .about-info-bg {
-  background-color: #041330;
   background: url("./assets/about-info-bg.png");
   background-repeat: no-repeat;
   background-size: contain;

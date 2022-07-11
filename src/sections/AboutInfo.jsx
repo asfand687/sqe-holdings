@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutInfo = () => {
   return (
-    <div className="bg-[#020B1D] text-white pb-20">
+    <div className=" text-white pb-20">
       <section className="about-info-bg h-[600px]">
         <article className="w-full max-w-5xl mx-auto flex items-center h-full flex-row-reverse">
           <div className="text-right space-y-8">
@@ -19,7 +19,7 @@ const AboutInfo = () => {
       </section>
       <article className="w-full max-w-7xl mx-auto flex items-center">
         <h2 className="text-6xl max-w-xs leading-tight bold">A platform for all</h2>
-        <div className="flex-1 text-[2-px] max-w-[745px]">
+        <div className="flex-1 text-[20px] max-w-[745px]">
           <p className="max-w-3xl">
             The creator of SQE Holdings wanted to create a platform for all. Small
             business owners, developers, entrepreneurs, coders, designers,

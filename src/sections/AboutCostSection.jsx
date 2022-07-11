@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutCostSection = () => {
   return (
-    <section className="bg-[#041330] text-white h-[980px] flex items-center services-bg services-bg-full">
+    <section className="text-white h-[980px] 2xl:h-[1200px] flex items-center services-bg border-b border-[#0E2043]">
       <div className="w-full max-w-7xl mx-auto px-4 space-y-6">
         <h2 className="font-bold text-[65px] leading-tight max-w-2xl">
           Keeping costs down across the charts

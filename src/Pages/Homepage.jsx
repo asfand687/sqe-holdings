@@ -8,13 +8,13 @@ import ServicesSection from '../sections/ServicesSection'
 
 const Homepage = () => {
   return (
-    <>
+    <main className="bg-[#071328]">
       <HomeHero />
       <TransactionStats />
       <HomeIntroSection />
       <ServicesSection />
       <HomeBottomSection />
-    </>
+    </main>
   )
 }
 
