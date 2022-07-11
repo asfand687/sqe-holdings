@@ -119,8 +119,9 @@
 
 .bg-home-bottom {
   background-image: url("./assets/sqe1.png");
-  background-position: center;
+  background-position: bottom center;
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .text-gradient {
