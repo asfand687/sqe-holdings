@@ -5,7 +5,7 @@ const HomeBottomSection = () => {
     <section className="text-white bg-[#020B1D]">
       <div className="h-[800px] bg-home-bottom flex lg:px-20 justify-center items-center lg:space-x-10">
         <article className="space-y-4">
-          <h2 className="text-7xl font-bold">Our Network</h2>
+          <h2 className="text-[80px] font-bold">Our Network</h2>
           <p className="text-4xl font-medium max-w-lg">
             SQE was designed to be hyper efficient, ultra secure and low cost. We use:
           </p>
