@@ -89,13 +89,6 @@
   background: linear-gradient(269.97deg, #002CEE -4.13%, #00C8E3 105.18%);
 }
 
-.bg-hexagon {
-  background: url("./assets/intro-bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: -10% 50%;
-}
-
 .bg-hex {
   background: url("./assets/hexagon.svg");
   background-repeat: no-repeat;

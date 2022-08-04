@@ -3,40 +3,65 @@ import React from 'react'
 
 const ServicesSection = () => {
   return (
-    <section className="py-20 relative  text-white services-bg h-[1250px]">
-      <div className="py-20 realtive z-10">
-        <h2 className=" uppercase font-bold text-[120px] text-center pb-4">Our Services</h2>
+    <section className="text-white services-bg h-[1000px]">
+      <div className="realtive z-10">
+        <h2 className="font-bold text-6xl text-center pb-6 lg:pb-16 tracking-wider">Build your world on SQE</h2>
+
         <article className="flex justify-center gap-x-10">
-          <div className="bg-hex w-[339px] h-[392px] flex items-center">
-            <div className="h-44 px-8">
-              <h2 className='text-white text-5xl uppercase font-bold pb-4'>Item</h2>
-              <p className="text-2xl font-light">info info info info info info info info info info</p>
+          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+            <div className="h-36 px-6">
+              <h2 className='text-white text-2xl  font-bold pb-1'>Communicate</h2>
+              <div className="opacity-60">
+                <p className="text-lg font-light leading-5">Secure messaging powered by simulated quantum entanglement.
+                </p>
+                <button className="underline underline-offset-2">Learn More</button>
+              </div>
             </div>
           </div>
-          <div className="bg-hex w-[339px] h-[392px] flex items-center">
-            <div className="h-44 px-8">
-              <h2 className='text-white text-5xl uppercase font-bold pb-4'>Item</h2>
-              <p className="text-2xl font-light">info info info info info info info info info info</p>
+
+          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+            <div className="h-36 px-6">
+              <h2 className='text-white text-2xl  font-bold pb-1'>Game</h2>
+              <div className="opacity-60">
+                <p className="text-lg font-light leading-5">Play, wager, and explore an expanding world of secure gaming.
+                </p>
+                <button className="underline underline-offset-2">Learn More</button>
+              </div>
             </div>
           </div>
         </article>
+
         <article className="relative -top-16 flex justify-center gap-x-10">
-          <div className="bg-hex w-[339px] h-[392px] flex items-center">
-            <div className="h-44 px-8">
-              <h2 className='text-white text-5xl uppercase font-bold pb-4'>Item</h2>
-              <p className="text-2xl font-light">info info info info info info info info info info</p>
+          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+            <div className="h-36 px-6">
+              <h2 className='text-white text-2xl  font-bold pb-1'>Automate</h2>
+              <div className="opacity-60">
+                <p className="text-lg font-light leading-5">Personal Digital Assistant (PDA) automates all your daily tasks from wake ups, to scheduling, to emails.
+                </p>
+                <button className="underline underline-offset-2">Learn More</button>
+              </div>
             </div>
           </div>
-          <div className="bg-hex w-[339px] h-[392px] flex items-center">
-            <div className="h-44 px-8">
-              <h2 className='text-white text-5xl uppercase font-bold pb-4'>Item</h2>
-              <p className="text-2xl font-light">info info info info info info info info info info</p>
+
+          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+            <div className="h-36 px-6">
+              <h2 className='text-white text-2xl  font-bold pb-1'>Create</h2>
+              <div className="opacity-60">
+                <p className="text-lg font-light leading-5">Build no-code mobile apps and smart-contracts on a quantum secure platform.
+                </p>
+                <p>(Coming Soon)</p>
+              </div>
             </div>
           </div>
-          <div className="bg-hex w-[339px] h-[392px] flex items-center">
-            <div className="h-44 px-8">
-              <h2 className='text-white text-5xl uppercase font-bold pb-4'>Item</h2>
-              <p className="text-2xl font-light">info info info info info info info info info info</p>
+
+          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+            <div className="h-36 px-6">
+              <h2 className='text-white text-2xl  font-bold pb-1'>Exchange</h2>
+              <div className="opacity-60">
+                <p className="text-lg font-light leading-5">Invest, buy & sell SQC, the world’s most secure semi-stable crypto.
+                </p>
+                <button className="underline underline-offset-2">Learn More</button>
+              </div>
             </div>
           </div>
         </article>

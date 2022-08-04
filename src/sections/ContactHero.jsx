@@ -4,7 +4,7 @@ import { ReactComponent as Instagram } from '../assets/insta-big.svg'
 
 const ContactHero = () => {
   return (
-    <section className="relative bg-[#020B1D] text-white">
+    <section className="relative text-white">
       <div className="about-bg h-[500px]">
         <div className="w-full max-w-[1076px] mx-auto relative z-10 py-20">
           <h1 className="text-[96px] font-semibold pt-8">Contact</h1>

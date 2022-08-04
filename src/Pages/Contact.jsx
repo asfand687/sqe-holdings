@@ -3,7 +3,9 @@ import ContactHero from '../sections/ContactHero'
 
 const Contact = () => {
   return (
-    <ContactHero />
+    <main className="bg-[#071328]">
+      <ContactHero />
+    </main>
   )
 }
 
