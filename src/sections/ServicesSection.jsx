@@ -3,7 +3,7 @@ import React from 'react'
 
 const ServicesSection = () => {
   return (
-    <section className="text-white services-bg h-[1000px]">
+    <section className="text-white services-bg h-[900px]">
       <div className="realtive z-10">
         <h2 className="font-bold text-6xl text-center pb-6 lg:pb-16 tracking-wider">Build your world on SQE</h2>
 

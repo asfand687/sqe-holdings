@@ -1,26 +1,35 @@
 import React from 'react'
+import InfoBg from '../assets/about-info-bg.png'
 
 const AboutInfo = () => {
   return (
-    <div className=" text-white pb-20">
-      <section className="about-info-bg h-[600px]">
-        <article className="w-full max-w-5xl mx-auto flex items-center h-full flex-row-reverse">
-          <div className="text-right space-y-8">
-            <h2 className="text-6xl font-bold">SQE is a quantum <br />
-              secure platform</h2>
-            <p className="text-[20px] max-w-[808px]">
-              for smart contracts, cryptocurrency, NFTs, and blockchain applications.
-              Not only is SQE revolutionizing the way any user can create and deploy
-              blockchain applications, but it also provides the first quantum secure
-              cryptocurrency for which every unit of currency is its own NFT.
-            </p>
+    <div className=" text-white lg:-mt-14">
+      <section>
+        <article className="w-full flex items-center h-full">
+          <div className="flex-1 lg:-mr-28">
+            <img src={InfoBg} alt="Info" />
+          </div>
+          <div className="flex-[2] flex flex-col lg:items-start text-right space-y-8">
+            <div className="max-w-3xl text-right">
+              <h2 className="text-5xl max-w-md ml-auto leading-tight pb-6 font-bold">
+                Secured by simulated quantum entanglement
+              </h2>
+              <div className="opacity-60 text-xl">
+                <p>
+                  SQE’s expert team of creators has created never before seen security through the world’s first simulated quantum entanglement driven digital platform. With a decentralized network, one-blockper-contract
+                  blockchain, and PoK secure communication, SQE is the fastest and
+                  most secure platform for all your apps and services.
+                </p>
+                <button className="underline underline-offset-2">Get started on SQE</button>
+              </div>
+            </div>
           </div>
         </article>
       </section>
       <article className="w-full max-w-7xl mx-auto flex items-center">
-        <h2 className="text-6xl max-w-xs leading-tight bold">A platform for all</h2>
-        <div className="flex-1 text-[20px] max-w-[745px]">
-          <p className="max-w-3xl">
+        <h2 className="text-5xl lg:max-w-[14rem] leading-tight font-bold">A platform for all</h2>
+        <div className="flex-1 text-xl max-w-3xl">
+          <p className="max-w-3xl opacity-60">
             The creator of SQE Holdings wanted to create a platform for all. Small
             business owners, developers, entrepreneurs, coders, designers,
             stay-at-home parents, students, and PhDs alike can use SQE to improve
@@ -34,13 +43,13 @@ const AboutInfo = () => {
       </article>
 
       <section className="py-10 flex justify-center space-x-12 text-white">
-        <article className="w-[482px] h-[588px] rounded-3xl p-8 py-10 bg-[#375284] space-y-4 custom-shadow-sm">
-          <h2 className="font-bold max-w-[100px] text-[75px] leading-tight">Our Network</h2>
-          <p className="text-[28px] font-medium max-w-[360px]">SQE was designed to be hyper efficient, ultra secure and low cost.</p>
+        <article className="w-[384px] h-[490px] rounded-[3.5rem] p-8 py-10 bg-[#050D27] space-y-4 custom-shadow-sm">
+          <h2 className="font-bold max-w-[100px] text-6xl leading-tight">Our Network</h2>
+          <p className="text-xl font-light opacity-60 tracking-tight max-w-xs">SQE was designed to be hyper efficient, ultra secure and low cost.</p>
         </article>
-        <article className="w-[482px] h-[588px]  rounded-3xl p-8 py-10 bg-[#375284] space-y-4 custom-shadow-sm">
-          <h2 className="font-bold max-w-[100px] text-[75px] leading-tight">We Use:</h2>
-          <ul className="leading-7 text-[22px] list-disc pl-6">
+        <article className="w-[384px] rounded-[3.5rem] p-8 py-10 bg-[#050D27] space-y-4 custom-shadow-sm">
+          <h2 className="font-bold max-w-[100px] text-6xl leading-tight">We Use:</h2>
+          <ul className="leading-7 w-full text-xl font-light tracking-tight opacity-60 list-disc pl-6">
             <li>Proof of Knowledge (PoK)</li>
             <li>Distributed and sustainable mining network</li>
             <li>Only one block per transaction</li>

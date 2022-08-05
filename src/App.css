@@ -99,8 +99,8 @@
 .services-bg {
   background-image: url("./assets/services-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: top center;
 }
 
 .services-bg-full {
@@ -109,7 +109,7 @@
 
 .bg-home-bottom {
   background-image: url("./assets/sqe1.png");
-  background-position: bottom center;
+  background-position: top left;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -141,7 +141,7 @@
 }
 
 .custom-shadow-sm {
-  box-shadow: -10px 14px 5px 0px rgba(255, 255, 255, 1);
-  -webkit-box-shadow: -10px 14px 5px 0px rgba(255, 255, 255, 1);
-  -moz-box-shadow: -10px 14px 5px 0px rgba(255, 255, 255, 1);
+  box-shadow: -10px 14px 3px 0px #2D4266;
+  -webkit-box-shadow: -10px 14px 3px 0px #2D4266;
+  -moz-box-shadow: -10px 14px 3px 0px #2D4266;
 }

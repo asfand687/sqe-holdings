@@ -26,7 +26,7 @@ const HomeIntroSection = () => {
           </article>
           <article className='flex'>
             <div className="flex-1 flex flex-col lg:items-center">
-              <div className="relative -top-20 max-w-[540px] space-y-4">
+              <div className="relative max-w-[540px] space-y-4">
                 <h2 className="w-full text-5xl font-bold max-w-[450px] leading-[3.4rem]">Welcome to a secure space for all your needs</h2>
                 <div>
                   <p className="text-base opacity-60 leading-6">
@@ -37,7 +37,7 @@ const HomeIntroSection = () => {
               </div>
             </div>
             <div className="flex-1">
-              <img src={Home2} alt="block" />
+              <img className="max-w-2xl ml-auto" src={Home2} alt="block" />
             </div>
           </article>
         </div>
