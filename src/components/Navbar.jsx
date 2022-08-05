@@ -26,7 +26,9 @@ const Navbar = () => {
               About
             </Link>
             <article className="font-montserrat">
-              Services
+              <Link className="font-montserrat" to="/services">
+                Services
+              </Link>
             </article>
             <article className="font-montserrat">
               Learning Center

@@ -15,6 +15,7 @@ import { Toaster } from 'react-hot-toast'
 import UpdatePassword from './Pages/UpdatePassword';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
+import Services from './Pages/Services';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/update-password" element={<UpdatePassword />} />
         </Routes>
         <Footer />

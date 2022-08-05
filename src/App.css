@@ -96,6 +96,10 @@
   background-position: center;
 }
 
+.bg-hex.clr-white {
+  background: url("./assets/hexagon-border-white.svg");
+}
+
 .services-bg {
   background-image: url("./assets/services-bg.png");
   background-repeat: no-repeat;
@@ -140,8 +144,18 @@
   -moz-box-shadow: -14px 14px 5px 0px rgba(255, 255, 255, 1);
 }
 
+.custom-shadow-white {
+  box-shadow: -8px 8px 2px 0px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: -8px 8px 2px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: -8px 8px 2px 0px rgba(255, 255, 255, 1);
+}
+
 .custom-shadow-sm {
   box-shadow: -10px 14px 3px 0px #2D4266;
   -webkit-box-shadow: -10px 14px 3px 0px #2D4266;
   -moz-box-shadow: -10px 14px 3px 0px #2D4266;
+}
+
+.services-bg {
+  background: url("./assets/services_back.png") no-repeat center center/cover;
 }
