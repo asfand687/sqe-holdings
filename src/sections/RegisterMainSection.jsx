@@ -11,6 +11,7 @@ import {
   signOut
 } from '@firebase/auth'
 
+
 import { db } from '../firebase'
 import { auth } from '../firebase'
 
@@ -60,6 +61,16 @@ const RegisterMainSection = () => {
       navigate('/')
 
     } catch (error) {
+      setRegisterData({
+        username: '',
+        confirmUsername: '',
+        password: '',
+        confirmPassword: '',
+        email: ''
+      })
+      if (error.message === "Firebase: Error (auth/email-already-in-use).") {
+        toast.error("Email Already In Use")
+      }
       console.log(error.message)
     }
   }
