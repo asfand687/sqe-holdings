@@ -31,7 +31,9 @@ const Navbar = () => {
               </Link>
             </article>
             <article className="font-montserrat">
-              Learning Center
+              <Link className="font-montserrat" to="/learning-center">
+                Learning Center
+              </Link>
             </article>
             <Link className="font-montserrat" to="/contact">
               Contact

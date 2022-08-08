@@ -25,7 +25,7 @@ let servicesData = [
 const ServicesHero = () => {
   const [selectedService, setSelectedService] = useState(servicesData[0])
   return (
-    <div className="services-bg text-white">
+    <div className="services-page-bg text-white">
       <div className="w-full max-w-6xl mx-auto pt-10 lg:pt-32 lg:pb-10">
         <h1 className="font-bold text-7xl">Services</h1>
       </div>

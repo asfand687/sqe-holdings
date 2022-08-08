@@ -1,26 +1,32 @@
-import React, { useState, useEffect } from 'react'
-import RegisterSectionTitle from '../components/RegisterSectionTitle'
-import QRCode from '../assets/qr-code.svg'
-import PrimaryButton from '../components/PrimaryButton'
-import Fox from '../assets/fox.svg'
-import Shield from '../assets/shield.svg'
-import Rainbow from '../assets/rainbow.png'
-import { Link } from 'react-router-dom'
-import { auth, db } from '../firebase'
-import { getDoc, doc } from '@firebase/firestore'
+import React from 'react'
+import {
+  Route,
+  Routes
+} from "react-router-dom"
+
+// import { auth, db } from '../firebase'
+// import { getDoc, doc } from '@firebase/firestore'
+import DashboardHeader from '../sections/DashboardHeader'
+import '../App.css';
+import DashboardHome from './DashboardHome'
+import DashboardGame from './DashboardGame'
+import DashboardExchange from './DashboardExchange'
+import DashboardSecureMessaging from './DashboardSecureMessaging'
+import DashboardNoCodeCreatorCenter from './DashboardNoCodeCreatorCenter'
 
 const Dashboard = () => {
-  const [user, setUser] = useState({})
-  useEffect(() => {
-    const getUserInfo = async () => {
-      const userData = await getDoc(doc(db, 'users', auth.currentUser.uid))
-      setUser(userData.data())
-    }
-    getUserInfo()
-  }, [])
+  // useEffect(() => {
+  //   const getUserInfo = async () => {
+  //     const userData = await getDoc(doc(db, 'users', auth.currentUser.uid))
+  //     setUser(userData.data())
+  //   }
+  //   getUserInfo()
+  // }, [])
+
   return (
-    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white relative min-h-[calc(100vh-234px)">
-      <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
+    <section className="bg-[#071328] pb-16  text-white relative min-h-[calc(100vh-234px)">
+      <DashboardHeader />
+      {/* <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
         <RegisterSectionTitle text="My SQE Dashboard" className="pb-8" />
         <aside className="absolute right-5 top-10">
           <img src={QRCode} alt="QR Code" />
@@ -88,7 +94,14 @@ const Dashboard = () => {
             </article>
           </div>
         </article>
-      </article>
+      </article> */}
+      <Routes className="text-white">
+        <Route exact path="/" element={<DashboardHome />} />
+        <Route exact path="/game" element={<DashboardGame />} />
+        <Route exact path="/exchange" element={<DashboardExchange />} />
+        <Route exact path="/secure-messaging" element={<DashboardSecureMessaging />} />
+        <Route exact path="/no-code-creator-center" element={<DashboardNoCodeCreatorCenter />} />
+      </Routes>
     </section>
   )
 }

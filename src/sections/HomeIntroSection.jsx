@@ -37,7 +37,7 @@ const HomeIntroSection = () => {
               </div>
             </div>
             <div className="flex-1">
-              <img className="max-w-2xl ml-auto" src={Home2} alt="block" />
+              <img className="max-w-2xl -mt-40 ml-auto" src={Home2} alt="block" />
             </div>
           </article>
         </div>

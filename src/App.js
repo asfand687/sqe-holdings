@@ -16,6 +16,7 @@ import UpdatePassword from './Pages/UpdatePassword';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Services from './Pages/Services';
+import LearningCenter from './Pages/LearningCenter';
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/learning-center" element={<LearningCenter />} />
           <Route path="/update-password" element={<UpdatePassword />} />
         </Routes>
         <Footer />

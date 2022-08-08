@@ -7,7 +7,7 @@ import Linkedin from '../assets/linkedin.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0E2043] py-8 text-white border-t border-[#0E2043]">
+    <footer className="bg-[#0E2043] py-4 text-white border-t border-[#0E2043]">
       <div className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto flex justify-between lg:items-center">
         <div>
           <img src={Logo} alt="Logo" />

@@ -80,7 +80,7 @@
   background-image:
     url("./assets/about-bg.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
 }
 
@@ -156,6 +156,6 @@
   -moz-box-shadow: -10px 14px 3px 0px #2D4266;
 }
 
-.services-bg {
+.services-page-bg {
   background: url("./assets/services_back.png") no-repeat center center/cover;
 }
