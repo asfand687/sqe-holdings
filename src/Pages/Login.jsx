@@ -6,6 +6,8 @@ import {
   signInWithEmailAndPassword,
 } from '@firebase/auth'
 
+import toast from 'react-hot-toast'
+
 import { getDoc, doc } from '@firebase/firestore'
 
 import { auth, db } from '../firebase'
@@ -25,21 +27,23 @@ const Login = () => {
     e.preventDefault()
     try {
       await signInWithEmailAndPassword(auth, loginData.email, loginData.password)
-      const userData = await getDoc(doc(db, 'users', auth.currentUser.uid))
-      if (userData.data().secondPhaseComplete) { return navigate('/dashboard') }
       setLoginData({
         email: '',
         password: '',
       })
+      const userData = await getDoc(doc(db, 'users', auth.currentUser.uid))
+      if (userData.data().secondPhaseComplete) { return navigate('/dashboard') }
       navigate('/welcome')
 
     } catch (error) {
-      console.log(error.message)
+      if (error.message === "Firebase: Error (auth/wrong-password).") {
+        toast.error("Wrong Credentials")
+      }
     }
   }
 
   return (
-    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white min-h-[calc(100vh-234px)]">
+    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white min-h-[calc(100vh-190px)]">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
         <RegisterSectionTitle text="Login" />
         <form onSubmit={handleSubmit} className="space-y-4">
