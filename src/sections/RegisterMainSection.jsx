@@ -7,7 +7,8 @@ import { collection, setDoc, doc } from '@firebase/firestore'
 
 import {
   createUserWithEmailAndPassword,
-  sendEmailVerification
+  sendEmailVerification,
+  signOut
 } from '@firebase/auth'
 
 import { db } from '../firebase'
@@ -45,7 +46,7 @@ const RegisterMainSection = () => {
         username: registerData.username,
         secondPhaseComplete: false
       })
-
+      await signOut(auth)
       toast.success("Your registeration is complete, please check your email for verification", {
         id: 'reg'
       })
