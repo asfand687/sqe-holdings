@@ -4,7 +4,7 @@ import { ReactComponent as Search } from '../assets/search-icon.svg'
 const LearningSectionHero = () => {
   return (
     <>
-      <div className="about-bg h-[400px]">
+      <div className="h-[400px]">
         <div className="relative w-full max-w-7xl mx-auto z-10 py-20">
           <h1 className="text-7xl font-semibold pt-8">Learning Center</h1>
         </div>

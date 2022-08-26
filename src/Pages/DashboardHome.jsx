@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const DashboardHome = () => {
   return (
-    <section className="text-white bg-[#071328]">
+    <section className="text-white">
       <div className="relative lg:-top-32 gap-y-10 w-full max-w-[1400px] mx-auto">
         <article className="flex justify-center gap-y-10 px-4 flex-wrap lg:space-x-10">
           <Link to="/dashboard/exchange" className="bg-hex w-[280px] h-[330px] flex justify-center items-center">

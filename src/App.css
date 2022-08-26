@@ -93,7 +93,12 @@
   background: url("./assets/hexagon.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+}
+
+.bg-hex {
+  background: url("./assets/hexagon-border-dull.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-hex.clr-white {
@@ -112,7 +117,7 @@
 }
 
 .bg-home-bottom {
-  background-image: url("./assets/sqe1.png");
+  background-image: url("./assets/bg-home-bottom.png");
   background-position: top left;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -126,6 +131,18 @@
 
 .bg-gradient-secondary {
   background: linear-gradient(270deg, #3963F8 0%, #56B7EE 84.4%);
+}
+
+.inset-shadow-bottom {
+  box-shadow: -182px 195px 105px -109px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: -182px 195px 105px -109px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: -182px 195px 105px -109px rgba(0, 0, 0, 0.75) inset;
+}
+
+.inset-shadow-top {
+  box-shadow: -182px -173px 105px -109px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: -182px -173px 105px -109px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: -182px -173px 105px -109px rgba(0, 0, 0, 0.75) inset;
 }
 
 .bar-gradient {
@@ -158,4 +175,14 @@
 
 .services-page-bg {
   background: url("./assets/services_back.png") no-repeat center center/cover;
+}
+
+.home-main-bg {
+  background: url("./assets/home-main-bg.png") no-repeat center center;
+  padding: 8rem 0rem;
+  background-size: 100%;
+}
+
+.bg-dashboard {
+  background: url("./assets/dashboard-bg.png") no-repeat center center/cover;
 }

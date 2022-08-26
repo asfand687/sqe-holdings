@@ -3,12 +3,12 @@ import React from 'react'
 
 const ServicesSection = () => {
   return (
-    <section className="text-white services-bg h-[900px]">
-      <div className="realtive z-10">
-        <h2 className="font-bold text-6xl text-center pb-6 lg:pb-16 tracking-wider">Build your world on SQE</h2>
+    <section className="text-white lg:pt-36">
+      <div className="realtive z-20 lg:pt-24 2xl:pt-32">
+        <h2 className="font-bold text-7xl 2xl:text-8xl text-center pb-6 lg:pb-16 tracking-wider z-10 relative">Build your world on SQE</h2>
 
         <article className="flex justify-center gap-x-10">
-          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+          <div className="bg-hex w-[320px] h-[370px] flex items-center">
             <div className="h-36 px-6">
               <h2 className='text-white text-2xl  font-bold pb-1'>Communicate</h2>
               <div className="opacity-60">
@@ -19,7 +19,7 @@ const ServicesSection = () => {
             </div>
           </div>
 
-          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+          <div className="bg-hex w-[320px] h-[370px] flex items-center">
             <div className="h-36 px-6">
               <h2 className='text-white text-2xl  font-bold pb-1'>Game</h2>
               <div className="opacity-60">
@@ -32,7 +32,7 @@ const ServicesSection = () => {
         </article>
 
         <article className="relative -top-16 flex justify-center gap-x-10">
-          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+          <div className="bg-hex w-[320px] h-[370px] flex items-center">
             <div className="h-36 px-6">
               <h2 className='text-white text-2xl  font-bold pb-1'>Automate</h2>
               <div className="opacity-60">
@@ -43,7 +43,7 @@ const ServicesSection = () => {
             </div>
           </div>
 
-          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+          <div className="bg-hex w-[320px] h-[370px] flex items-center">
             <div className="h-36 px-6">
               <h2 className='text-white text-2xl  font-bold pb-1'>Create</h2>
               <div className="opacity-60">
@@ -54,7 +54,7 @@ const ServicesSection = () => {
             </div>
           </div>
 
-          <div className="bg-hex w-[280px] h-[330px] flex items-center">
+          <div className="bg-hex w-[320px] h-[370px] flex items-center">
             <div className="h-36 px-6">
               <h2 className='text-white text-2xl  font-bold pb-1'>Exchange</h2>
               <div className="opacity-60">

@@ -9,8 +9,8 @@ const DashboardExchange = () => {
           <h2 className='text-white text-2xl font-bold pb-1'>Exchange</h2>
         </div>
       </article>
-      <article>
-        <div className="py-4 text-xl space-y-2 pl-4">
+      <article className="space-y-4 text-center">
+        <div className="py-4 text-xl space-y-2 pl-4 bg-gradient rounded-3xl">
           <p>SQC Owned: xx</p>
           <p>NFTs Owned: xx</p>
         </div>

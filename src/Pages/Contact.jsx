@@ -3,7 +3,7 @@ import ContactHero from '../sections/ContactHero'
 
 const Contact = () => {
   return (
-    <main className="bg-[#071328]">
+    <main className="bg-dashboard">
       <ContactHero />
     </main>
   )

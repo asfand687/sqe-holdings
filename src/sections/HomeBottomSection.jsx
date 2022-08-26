@@ -3,7 +3,8 @@ import React from 'react'
 const HomeBottomSection = () => {
   return (
     <section className="text-white border-b relative border-[#0E2043]">
-      <div className="h-[550px] 2xl:h-[600px] bg-home-bottom">
+      <div className="w-full h-[200px] z-0 absolute top-0 inset-shadow-bottom" />
+      <div className="bg-home-bottom pt-32 pb-48 relative z-10">
         <div className="max-w-7xl flex justify-center items-center lg:space-x-32 h-full mx-auto">
           <article className="space-y-1">
             <h2 className="text-[55px] font-bold">Our Network</h2>

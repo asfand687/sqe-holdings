@@ -1,9 +1,8 @@
 import React from 'react'
 import HomeHero from '../sections/HomeHero'
 import TransactionStats from '../sections/TransactionStats'
-import HomeIntroSection from '../sections/HomeIntroSection'
 import HomeBottomSection from '../sections/HomeBottomSection'
-import ServicesSection from '../sections/ServicesSection'
+import HomeMainSection from '../sections/HomeMainSection'
 
 
 const Homepage = () => {
@@ -11,8 +10,7 @@ const Homepage = () => {
     <main className="bg-[#031A41]">
       <HomeHero />
       <TransactionStats />
-      <HomeIntroSection />
-      <ServicesSection />
+      <HomeMainSection />
       <HomeBottomSection />
     </main>
   )
