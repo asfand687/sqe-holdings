@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Logo from '../assets/logo-nav.png'
-import PrimaryButton from './PrimaryButton'
 import { auth } from '../firebase'
 import { signOut } from '@firebase/auth'
 
@@ -53,20 +52,22 @@ const Navbar = () => {
             (
               <>
                 <Link to="/login">
-                  <button>
-                    <div className="w-[350px] h-[80px] clip-primary bg-gradient flex justify-center items-center">
-                      <div className="w-[345px] h-[75px] clip-primary bg-[#011132] flex items-center justify-center">
-                        <span className="uppercase font-bold bg-gradient text-lg text-gradient">Login</span>
+                  <button className="-mr-20">
+                    <div className="w-[200px] h-[50px] clip-primary bg-gradient-accent flex justify-center items-center">
+                      <div className="w-[195px] h-[45px] clip-primary bg-white flex items-center justify-center">
+                        <span className="uppercase font-bold bg-gradient text-sm text-gradient">Login</span>
                       </div>
                     </div>
                   </button>
                 </Link>
                 <Link to="register">
-                  <PrimaryButton
-                    text="register"
-                    type="button"
-                    className="w-28 h-8 text-sm btn-gradient"
-                  />
+                  <button>
+                    <div className="w-[200px] h-[50px] clip-primary bg-gradient-accent flex justify-center items-center">
+                      <div className="w-[195px] h-[45px] clip-primary bg-white flex items-center justify-center">
+                        <span className="uppercase font-bold bg-gradient text-sm text-gradient">Register</span>
+                      </div>
+                    </div>
+                  </button>
                 </Link>
               </>
             ) : (
