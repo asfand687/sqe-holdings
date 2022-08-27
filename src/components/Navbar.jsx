@@ -13,8 +13,8 @@ const Navbar = () => {
     navigate("/")
   }
   return (
-    <nav className="py-2 text-sm">
-      <div className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto flex justify-between lg:items-center">
+    <nav className="py-2 text-sm bg-white">
+      <div className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 uppercase mx-auto flex justify-between lg:items-center">
         <article className="flex lg:items-center space-x-8 text-base text-[#01165C]">
           <div>
             <Link className="flex" to="/">
@@ -22,6 +22,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex space-x-10">
+            <Link className="font-montserrat" to="/">
+              Home
+            </Link>
             <Link className="font-montserrat" to="/about">
               About
             </Link>
@@ -31,8 +34,13 @@ const Navbar = () => {
               </Link>
             </article>
             <article className="font-montserrat">
+              <Link className="font-montserrat" to="/app">
+                The App
+              </Link>
+            </article>
+            <article className="font-montserrat">
               <Link className="font-montserrat" to="/learning-center">
-                Learning Center
+                Learn
               </Link>
             </article>
             <Link className="font-montserrat" to="/contact">
@@ -45,11 +53,13 @@ const Navbar = () => {
             (
               <>
                 <Link to="/login">
-                  <PrimaryButton
-                    text="login"
-                    type="button"
-                    className="w-28 h-8 text-sm btn-gradient"
-                  />
+                  <button>
+                    <div className="w-[350px] h-[80px] clip-primary bg-gradient flex justify-center items-center">
+                      <div className="w-[345px] h-[75px] clip-primary bg-[#011132] flex items-center justify-center">
+                        <span className="uppercase font-bold bg-gradient text-lg text-gradient">Login</span>
+                      </div>
+                    </div>
+                  </button>
                 </Link>
                 <Link to="register">
                   <PrimaryButton
@@ -62,14 +72,22 @@ const Navbar = () => {
             ) : (
               <>
                 <Link to="/dashboard">
-                  <PrimaryButton
-                    text="dashboard"
-                    type="button"
-                    className="w-28 h-8 text-sm btn-gradient"
-                  />
+                  <button className="-mr-20">
+                    <div className="w-[200px] h-[50px] clip-primary bg-gradient-accent flex justify-center items-center">
+                      <div className="w-[195px] h-[45px] clip-primary bg-white flex items-center justify-center">
+                        <span className="uppercase font-bold bg-gradient text-sm text-gradient">Dashboard</span>
+                      </div>
+                    </div>
+                  </button>
                 </Link>
                 <div onClick={logout}>
-                  <PrimaryButton text="signout" type="button" className="w-28 h-8 text-sm bg-red-400" />
+                  <button>
+                    <div className="w-[200px] h-[50px] clip-primary bg-gradient-accent flex justify-center items-center">
+                      <div className="w-[195px] h-[45px] clip-primary bg-white flex items-center justify-center">
+                        <span className="uppercase font-bold bg-gradient text-sm text-gradient">Signout</span>
+                      </div>
+                    </div>
+                  </button>
                 </div>
               </>
             )

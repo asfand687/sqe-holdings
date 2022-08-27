@@ -4,7 +4,7 @@ import Services from './ServicesSection'
 
 const HomeMainSection = () => {
   return (
-    <div className="home-main-bg inset-shadow-top">
+    <div className="">
       <HomeIntroSection />
       <Services />
     </div>

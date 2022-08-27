@@ -1,5 +1,4 @@
 import React from 'react'
-import InfoBg from '../assets/about-info-bg.png'
 
 const AboutInfo = () => {
   return (
@@ -7,7 +6,6 @@ const AboutInfo = () => {
       <section>
         <article className="w-full flex items-center h-full">
           <div className="flex-1 lg:-mr-28">
-            <img src={InfoBg} alt="Info" />
           </div>
           <div className="flex-[2] flex flex-col lg:items-start text-right space-y-8">
             <div className="max-w-3xl text-right">

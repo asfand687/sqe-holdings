@@ -20,7 +20,7 @@ import LearningCenter from './Pages/LearningCenter';
 
 function App() {
   return (
-    <main>
+    <main className="bg-[#011132]">
       <Toaster />
       <BrowserRouter>
         <Navbar />

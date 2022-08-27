@@ -5,7 +5,7 @@ import AboutInfo from '../sections/AboutInfo'
 
 const About = () => {
   return (
-    <main className="bg-[#071328]">
+    <main className="bg-[#071328] about-bg">
       <AboutHero />
       <AboutInfo />
       <AboutCostSection />

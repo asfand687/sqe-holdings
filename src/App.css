@@ -42,6 +42,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.hero-text {
+  background: radial-gradient(167.35% 167.35% at 52.31% -21.83%, #FCFEFF 44.79%, #319EDC 96.35%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
 .flex-2 {
   flex: 2;
 }
@@ -70,24 +81,35 @@
 .hero-bg {
   width: 100%;
   background-image:
-    url("./assets/hero-bg.png");
+    url("./assets/home-hero.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.border-gradient {
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(171.65deg, #75E6FF 9.63%, #0036C1 91.65%);
+}
+
+.about-hero-bg {
+  background-image: url("./assets//about-hero-bg.png")
 }
 
 .about-bg {
   background-image:
     url("./assets/about-bg.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
 }
 
 
 .bg-gradient {
-  background: linear-gradient(269.97deg, #002CEE -4.13%, #00C8E3 105.18%);
+  background: linear-gradient(91.85deg, #46CEEC 0%, #0036C1 95.2%);
 }
+
 
 .bg-hex {
   background: url("./assets/hexagon.svg");
@@ -117,20 +139,46 @@
 }
 
 .bg-home-bottom {
-  background-image: url("./assets/bg-home-bottom.png");
-  background-position: top left;
-  background-size: 100%;
+  background-image: url("./assets/home-bottom-bg.png");
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .text-gradient {
-  background: linear-gradient(269.97deg, #002CEE -4.13%, #00C8E3 105.18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.clip-primary {
+  clip-path: polygon(25% 0%, 75% 0%, 82% 50%, 75% 100%, 25% 100%, 18% 50%);
+}
+
+.hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagon-wide {
+  -webkit-clip-path: polygon(0% 44%, 21% 1%, 81% 0%, 99% 43%, 79% 99%, 24% 100%);
+  clip-path: polygon(0% 44%, 21% 1%, 81% 0%, 99% 43%, 79% 99%, 24% 100%);
+}
+
+.hexagon-bg {
+  background: linear-gradient(198.2deg, rgba(0, 49, 122, 0.88) 7.01%, rgba(1, 24, 66, 0.88) 56.54%);
+  box-shadow: -5px 5px 30px 0px rgba(19, 46, 92, 1);
+}
+
+.hexagon-bg.clip {
+  clip-path: url(#svgPath);
+}
+
 .bg-gradient-secondary {
   background: linear-gradient(270deg, #3963F8 0%, #56B7EE 84.4%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(111.65deg, #75E6FF 30.63%, #0036C1 70.65%),
+    linear-gradient(0deg, rgba(217, 217, 217, 0), rgba(217, 217, 217, 0));
 }
 
 .inset-shadow-bottom {
