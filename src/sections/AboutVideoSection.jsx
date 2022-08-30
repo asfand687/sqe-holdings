@@ -3,7 +3,7 @@ import { ReactComponent as Polygon } from '../assets/polygon.svg'
 
 const AboutVideoSection = () => {
   return (
-    <section className="text-white -mt-20 pt-20 relative">
+    <section className="text-white -mt-36 relative">
       <article className="flex justify-center items-center">
         <div className="w-full max-w-5xl flex justify-center items-center bg-[#003E78] uppercase h-[500px] z-10">
           Video
