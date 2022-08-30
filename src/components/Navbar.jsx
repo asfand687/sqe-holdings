@@ -12,7 +12,7 @@ const Navbar = () => {
     navigate("/")
   }
   return (
-    <nav className="py-2 text-sm bg-white">
+    <nav className="py-2 text-sm bg-white z-10 relative">
       <div className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 uppercase mx-auto flex justify-between lg:items-center">
         <article className="flex lg:items-center space-x-8 text-base text-[#01165C]">
           <div>

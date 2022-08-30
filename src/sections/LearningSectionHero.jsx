@@ -1,37 +1,37 @@
 import React from 'react'
 import { ReactComponent as Search } from '../assets/search-icon.svg'
+import { ReactComponent as InputPolygon } from '../assets/input-polygon.svg'
+import { ReactComponent as Polygon } from '../assets/polygon-light.svg'
 
 const LearningSectionHero = () => {
   return (
-    <>
-      <div className="h-[400px]">
-        <div className="relative w-full max-w-7xl mx-auto z-10 py-20">
-          <h1 className="text-7xl font-semibold pt-8">Learning Center</h1>
+    <section className="text-[#003E78] pb-10 relative z-[3]">
+      <div className="h-screen bg-white relative bg-learning-main">
+        <div className="relative w-full h-[600px] flex items-center justify-center z-10">
+          <h1
+            className="text-8xl font-black text-center uppercase py-4 font-montserrat pb-10 text-[#042257]">
+            Learning Center
+          </h1>
         </div>
+        <div className="absolute left-0 top-0 w-full z-0 h-screen bg-learning-hero-01"></div>
+        <div className="absolute right-0 top-0 w-full z-0 h-screen bg-learning-hero-02"></div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto">
-        <h2 className="-mt-48 text-center text-5xl leading-tight lg:pt-20 font-bold pb-4">
-          This is a heading <br />
-          for the learning center.
+      <div className="w-full max-w-lg mx-auto relative">
+        <h2 className="text-center text-2xl uppercase font-semibold">
+          WELCOME TO THE SQE LEARNING CENTER
         </h2>
-
-        <div className="max-w-4xl mx-auto opacity-60 flex flex-col items-center leading-5 pb-6 lg:pb-8">
-          <p className="text-center">
-            SQE’s expert team of creators has created never before seen security through the world’s first simulated quantum entanglement driven digital platform. With a decentralized network, one-block-per blockchain, and PoK
-            secure communication, SQE is the fastest and most secure platform for all your apps and services.
-          </p>
-          <button className="underline underline-offset-2">
-            Get started on SQE
-          </button>
-        </div>
-
-        <section className="bg-[#050D27] relative text-white rounded-lg px-2 lg:px-6 py-3 w-full mb-8 custom-shadow-white flex justify-center text-2xl font-bold cursor-pointer hover:opacity-80">
-          <input className="w-full outline-none bg-transparent placeholder-white text-base font-normal border-b border-white" placeholder="Search" />
-          <Search className="absolute w-5 right-2 lg:right-6 top-2" />
-        </section>
+        <p className="text-center leading-5 pt-6 pb-10">
+          Explore everything from how to use our features to the blockchain basics to the complexities of secure quantum entanglement.
+        </p>
       </div>
-    </>
+      <section className="relative max-w-2xl mx-auto">
+        <Polygon className="absolute w-28 -left-14 -top-20" />
+        <InputPolygon className="w-full absolute -bottom-4" />
+        <input className="w-full font-semibold text-lg px-14 outline-none bg-gradient-to-r from-[#042257] to-[#0036C1] text-gradient relative z-10 py-[3px]" placeholder="SEARCH" />
+        <Search className="absolute text-[#042257] text-lg w-5 left-2 lg:left-6 top-[7px]" />
+      </section>
+    </section>
   )
 }
 

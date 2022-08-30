@@ -1,12 +1,14 @@
 import React from 'react'
+import LearningCenterBottom from '../sections/LearningCenterBottom'
+import LearningCenterFeaturedContent from '../sections/LearningCenterFeaturedContent'
 import LearningSectionHero from '../sections/LearningSectionHero'
-import VideoGallery from '../sections/VideoGallery'
 
 const LearningCenter = () => {
   return (
-    <section className="bg-[#031A41] text-white services-page-bg">
+    <section className="bg-white">
       <LearningSectionHero />
-      <VideoGallery />
+      <LearningCenterFeaturedContent />
+      <LearningCenterBottom />
     </section>
   )
 }

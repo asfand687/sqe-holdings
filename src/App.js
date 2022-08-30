@@ -20,7 +20,7 @@ import LearningCenter from './Pages/LearningCenter';
 
 function App() {
   return (
-    <main className="bg-[#011132]">
+    <main className="bg-[#011132] overflow-x-hidden">
       <Toaster />
       <BrowserRouter>
         <Navbar />

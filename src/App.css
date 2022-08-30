@@ -94,7 +94,7 @@
 }
 
 .about-hero-bg {
-  background-image: url("./assets//about-hero-bg.png")
+  background: url("./assets//about-hero.png") no-repeat center top/contain;
 }
 
 .about-bg {
@@ -105,6 +105,21 @@
   background-size: cover;
 }
 
+.about-bottom-bg {
+  background-image:
+    url("./assets/about-bottom-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-about-bottom-right {
+  background-image:
+    url("./assets/about-bottom-right-bg.png");
+  background-repeat: no-repeat;
+  background-position: top -400px right -1100px;
+  background-size: cover;
+}
 
 .bg-gradient {
   background: linear-gradient(91.85deg, #46CEEC 0%, #0036C1 95.2%);
@@ -118,13 +133,13 @@
 }
 
 .bg-hex {
-  background: url("./assets/hexagon-border-dull.svg");
+  background: url("./assets/hex-shape-unselected.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-hex.clr-white {
-  background: url("./assets/hexagon-border-white.svg");
+  background: url("./assets/hex-shape-selected.svg");
 }
 
 .services-bg {
@@ -143,6 +158,60 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.bg-polygon-xl {
+  background-image: url("./assets/polygon-xl.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-learning-hero-01 {
+  background-image: url("./assets/learning-hero-bg-01.png");
+  background-position: top -500px left -870px;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+.bg-learning-hero-02 {
+  background-image: url("./assets/learning-hero-bg-02.png");
+  background-position: top -720px right -870px;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+.bg-learning-main {
+  background-image: url("./assets/learning-hero-bg.svg");
+  background-position: top -80px right 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.bg-learning-featured {
+  background-image: url("./assets/learning-featured-content-bg.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-learning-center-content-left {
+  background-image: url("./assets/learning-content-bg-left.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-learning-center-content-right {
+  background-image: url("./assets/learning-content-bg-right.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.team-bg {
+  background-position: top -500px right 0px;
 }
 
 .text-gradient {

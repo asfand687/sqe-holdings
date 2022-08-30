@@ -1,14 +1,16 @@
 import React from 'react'
-import AboutCostSection from '../sections/AboutCostSection'
 import AboutHero from '../sections/AboutHero'
 import AboutInfo from '../sections/AboutInfo'
+import AboutTeamSection from '../sections/AboutTeamSection'
+import AboutVideoSection from '../sections/AboutVideoSection'
 
 const About = () => {
   return (
-    <main className="bg-[#071328] about-bg">
+    <main className="bg-[#011132] text-white">
       <AboutHero />
+      <AboutVideoSection />
       <AboutInfo />
-      <AboutCostSection />
+      <AboutTeamSection />
     </main>
   )
 }

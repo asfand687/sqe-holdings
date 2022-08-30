@@ -1,61 +1,72 @@
 import React from 'react'
+import { ReactComponent as Arrow } from '../assets/arrow-right.svg'
+import AboutBg from '../assets/about-info-bg.png'
+import { ReactComponent as Polygon } from '../assets/polygon.svg'
+
 
 const AboutInfo = () => {
   return (
-    <div className=" text-white lg:-mt-14">
-      <section>
-        <article className="w-full flex items-center h-full">
-          <div className="flex-1 lg:-mr-28">
+    <div className="pt-20">
+      <section className="w-full max-w-[950px] mx-auto">
+        <article className="relative">
+          <div className="absolute -bottom-56 -left-[1550px]">
+            <img src={AboutBg} alt="Background Asset" />
           </div>
-          <div className="flex-[2] flex flex-col lg:items-start text-right space-y-8">
-            <div className="max-w-3xl text-right">
-              <h2 className="text-5xl max-w-md ml-auto leading-tight pb-6 font-bold">
-                Secured by simulated quantum entanglement
-              </h2>
-              <div className="opacity-60 text-xl">
-                <p>
-                  SQE’s expert team of creators has created never before seen security through the world’s first simulated quantum entanglement driven digital platform. With a decentralized network, one-blockper-contract
-                  blockchain, and PoK secure communication, SQE is the fastest and
-                  most secure platform for all your apps and services.
-                </p>
-                <button className="underline underline-offset-2">Get started on SQE</button>
-              </div>
+          <section>
+            <h2 className="text-6xl leading-[4rem] w-full max-w-[50rem] font-bold uppercase">
+              Secure Quantum Exchange & Stimulated Quantum Engagement
+            </h2>
+            <div className="opacity-80 text-2xl space-y-6 py-6 text-[#effcff]">
+              <p>
+                SQE stands for Secure Quantum Exchange. This new digital world is a Quantum Secure internet security platform powered by “Simulated Quantum Entanglement”. Using SQE’s patent-pending technology (“Simulated Quantum Entanglement”), SQE components stay in a state of superposition and are linked, much like the real entanglement. The SQE network uses this bleeding-edge technology to communicate between its components with maximum efficiency. Just like with true quantum entanglement in which particles are created at the same time, SQE’s components will stay in a state of superposition until they are disturbed. Much like the real entanglement, SQE’s components (namely Links, Nodes, Servers, Mobile devices and secure cloud servers) are all linked through a mathematical entity, Cellular Automata (CA).
+              </p>
+
+              <p>
+                This patent-pending system also means that these entanglements will be broken if there is any attempt to hack them. Using these components, SQE has created a transaction processing system that is ultra-secure. Since there are no keys required to create a transaction due to its inherent communication, therefore it is virtually impossible to hack into the SQE system. According to research and calculations made by Brown University PhDs in Mathematics, it’s more likely for a person to win the Powerball every day for a year than it is for someone to hack a single SQE transaction. We believe it’s time to raise the bar. Welcome to the future of digital security.
+              </p>
+            </div>
+            <div className="py-4">
+              <button className="uppercase inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
+                <span className="font-montserrat ">Watch A Video About S.Q.E</span>
+                <Arrow />
+              </button>
+            </div>
+          </section>
+        </article>
+      </section>
+
+      <section className="about-bottom-bg">
+        <article className="h-[1000px] flex items-center w-full max-w-[950px] mx-auto">
+          <div className="z-10">
+            <h2 className="text-6xl leading-[4rem] w-full max-w-[50rem] font-bold uppercase">
+              Proof Of Knowledge
+            </h2>
+            <p className="opacity-80 text-2xl py-6 text-[#effcff]">
+              This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is.
+            </p>
+            <div className="py-4">
+              <button className="uppercase inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
+                <span className="font-montserrat ">Watch A Video About S.Q.E</span>
+                <Arrow />
+              </button>
             </div>
           </div>
         </article>
       </section>
-      <article className="w-full max-w-7xl mx-auto flex items-center">
-        <h2 className="text-5xl lg:max-w-[14rem] leading-tight font-bold">A platform for all</h2>
-        <div className="flex-1 text-xl max-w-3xl">
-          <p className="max-w-3xl opacity-60">
-            The creator of SQE Holdings wanted to create a platform for all. Small
-            business owners, developers, entrepreneurs, coders, designers,
-            stay-at-home parents, students, and PhDs alike can use SQE to improve
-            their lives. Whether someone has a lifetime of development experience or
-            none whatsoever, SQE was designed to be accessible to everyone. SQE
-            Holdings is the first quantum secure platform to allow both technical and
-            non-technical creators to easily develop and market their Smart Contracts,
-            WEB3, NFT, and other Blockchain applications.
-          </p>
-        </div>
-      </article>
 
-      <section className="py-10 flex justify-center space-x-12 text-white">
-        <article className="w-[384px] h-[490px] rounded-[3.5rem] p-8 py-10 bg-[#050D27] space-y-4 custom-shadow-sm">
-          <h2 className="font-bold max-w-[100px] text-6xl leading-tight">Our Network</h2>
-          <p className="text-xl font-light opacity-60 tracking-tight max-w-xs">SQE was designed to be hyper efficient, ultra secure and low cost.</p>
+      <section className="relative h-[90vh] bg-about-bottom-right">
+        <article className="flex justify-center py-32">
+          <button>
+            <div className="w-[650px] h-[90px] clip-primary bg-gradient flex justify-center items-center">
+              <div className="w-[645px] h-[85px] clip-primary bg-[#011132] flex items-center justify-center">
+                <span className="uppercase font-bold bg-gradient text-lg text-gradient">GO TO THE VIDEO LEARNING CENTER</span>
+              </div>
+            </div>
+          </button>
         </article>
-        <article className="w-[384px] rounded-[3.5rem] p-8 py-10 bg-[#050D27] space-y-4 custom-shadow-sm">
-          <h2 className="font-bold max-w-[100px] text-6xl leading-tight">We Use:</h2>
-          <ul className="leading-7 w-full text-xl font-light tracking-tight opacity-60 list-disc pl-6">
-            <li>Proof of Knowledge (PoK)</li>
-            <li>Distributed and sustainable mining network</li>
-            <li>Only one block per transaction</li>
-            <li>Advanced patented innovations</li>
-            <li>Processing speeds up to 100,000 Transactions per Second (TPS)</li>
-          </ul>
-        </article>
+        <Polygon className="w-64" />
       </section>
+
     </div>
   )
 }
