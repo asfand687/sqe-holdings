@@ -4,12 +4,12 @@ import Ellipse from '../assets/ellipse.png'
 const DashboardHeader = () => {
   return (
     <header className="w-full">
-      <section className="h-[450px]">
-        <div className="w-full max-w-7xl mx-auto relative z-10 py-20 space-y-6">
-          <h1 className="text-7xl font-semibold pt-8">My SQE Dashboard</h1>
+      <section>
+        <div className="w-full max-w-6xl mx-auto relative z-10 space-y-6">
+          <h1 className="text-8xl uppercase leading-[7rem] font-montserrat font-bold pt-8 max-w-lg">My SQE Dashboard</h1>
           <div className="flex items-center space-x-4">
             <img src={Ellipse} alt="ellipse" />
-            <p>User#1000</p>
+            <p className="font-semibold">User#1000</p>
           </div>
         </div>
       </section>

@@ -6,7 +6,7 @@ import Twitter from '../assets/twitter.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-8 text-white border-t border-[#0E2043]">
+    <footer className="bg-white py-8 text-white border-t border-[#0E2043] relative z-10">
       <div className="w-full lg:max-w-[1400px] text-[#042257] uppercase 2xl:max-w-full px-4 mx-auto flex flex-wrap justify-center">
         <div className=" space-y-2 w-[250px] ">
           <h2 className=" font-bold pb-2">
