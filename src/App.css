@@ -334,6 +334,10 @@
   text-fill-color: transparent;
 }
 
+.home__competitor-border_bg {
+  background: linear-gradient(90deg, #75E6FF 24.78%, #0C47C7 78.97%);
+}
+
 .contact-hero-bg {
   background: url("./assets/contact-hero-bg.png") no-repeat;
   background-size: cover;
