@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import RegisterSectionTitle from '../components/RegisterSectionTitle'
-import PrimaryButton from '../components/PrimaryButton'
 import { useNavigate } from 'react-router-dom'
 import { ReactComponent as InputPolygon } from '../assets/RegistrationInputPolygon.svg'
 import {
