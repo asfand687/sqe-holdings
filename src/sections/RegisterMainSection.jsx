@@ -4,6 +4,7 @@ import PrimaryButton from '../components/PrimaryButton'
 import { useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 import { collection, setDoc, doc } from '@firebase/firestore'
+import { ReactComponent as InputPolygon } from '../assets/RegistrationInputPolygon.svg'
 
 import {
   createUserWithEmailAndPassword,
@@ -79,55 +80,66 @@ const RegisterMainSection = () => {
   return (
     <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white min-h-[calc(100vh-234px)">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
-        <RegisterSectionTitle text="Register With SQE" />
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <h3 className="text-sm font-medium">*Required Field</h3>
-          <div className="space-y-2">
-            <p className="text-xl">*Create Username</p>
+        <RegisterSectionTitle text="Register" />
+        <form onSubmit={handleSubmit} className=" max-w-2xl mx-auto">
+          <div className="space-y-2 relative text-[#46CEEC] font-semibold">
+            <InputPolygon className="absolute top-6 left-0" />
             <input
               value={registerData.username}
               onChange={({ target }) => setRegisterData({ ...registerData, username: target.value })}
               type="text"
-              className="w-full max-w-[537px] h-10 rounded-[30px] bg-[#DEDEDE] outline-none px-4 text-gray-700" required />
+              className="w-full h-[61px] bg-transparent  rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="USERNAME" required />
+            <p className="pt-1 pl-8 uppercase">Username</p>
           </div>
-          <div className="space-y-2">
-            <p className="text-xl">*Confirm Username </p>
+
+          <div className="space-y-2 relative text-[#46CEEC] font-semibold">
+            <InputPolygon className="absolute top-6 left-0" />
             <input
               value={registerData.confirmUsername}
               onChange={({ target }) => setRegisterData({ ...registerData, confirmUsername: target.value })}
               type="text"
-              className="w-full max-w-[537px] h-10 rounded-[30px] bg-[#DEDEDE] outline-none px-4 text-gray-700" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="CONFIRM USERNAME" required />
+            <p className="pt-1 pl-8 uppercase">Confirm Username</p>
           </div>
-          <div className="space-y-2">
-            <p className="text-xl">*Create Password</p>
+
+          <div className="space-y-2 relative text-[#46CEEC] font-semibold">
+            <InputPolygon className="absolute top-6 left-0" />
             <input
               value={registerData.password}
               onChange={({ target }) => setRegisterData({ ...registerData, password: target.value })}
               type="password"
-              className="w-full max-w-[537px] h-10 rounded-[30px] bg-[#DEDEDE] outline-none px-4 text-gray-700" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="PASSWORD" required />
+            <p className="pt-1 pl-8 uppercase">Password</p>
           </div>
-          <div className="space-y-2">
-            <p className="text-xl">*Confirm Password </p>
+
+          <div className="space-y-2 relative text-[#46CEEC] font-semibold">
+            <InputPolygon className="absolute top-6 left-0" />
             <input
               value={registerData.confirmPassword}
               onChange={({ target }) => setRegisterData({ ...registerData, confirmPassword: target.value })}
               type="password"
-              className="w-full max-w-[537px] h-10 rounded-[30px] bg-[#DEDEDE] outline-none px-4 text-gray-700" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="CONFIRM PASSWORD" required />
+            <p className="pt-1 pl-8 uppercase">Confirm Password</p>
           </div>
-          <div className="space-y-2">
-            <p className="text-xl">*Enter Email</p>
+
+          <div className="space-y-2 relative text-[#46CEEC] font-semibold">
+            <InputPolygon className="absolute top-6 left-0" />
             <input
               value={registerData.email}
               onChange={({ target }) => setRegisterData({ ...registerData, email: target.value })}
               type="email"
-              className="w-full max-w-[537px] h-10 rounded-[30px] bg-[#DEDEDE] outline-none px-4 text-gray-700" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="EMAIL ADDRESS" required />
+            <p className="pt-1 pl-8 uppercase">Email Address</p>
           </div>
-          <div className="pt-8">
-            <PrimaryButton
-              className="w-52 h-10 text-2xl btn-gradient"
-              text="Complete"
-              type="submit"
-            />
+
+          <div className="pt-8 flex justify-center">
+            <button type="submit">
+              <div className="w-[350px] h-[90px] clip-primary bg-gradient flex justify-center items-center">
+                <div className="w-[345px] h-[85px] clip-primary bg-[#011132] flex items-center justify-center">
+                  <span className="uppercase font-bold bg-gradient text-lg text-gradient">Register Now</span>
+                </div>
+              </div>
+            </button>
           </div>
         </form>
       </article>

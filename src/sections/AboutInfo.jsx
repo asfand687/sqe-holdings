@@ -13,7 +13,7 @@ const AboutInfo = () => {
             <img src={AboutBg} alt="Background Asset" />
           </div>
           <section>
-            <h2 className="text-6xl leading-[4rem] w-full max-w-[50rem] font-bold uppercase">
+            <h2 className="text-[56px] leading-[4rem] w-full max-w-[50rem] font-extrabold font-montserrat uppercase">
               Secure Quantum Exchange & Stimulated Quantum Engagement
             </h2>
             <div className="opacity-80 text-2xl space-y-6 py-6 text-[#effcff]">
@@ -38,15 +38,15 @@ const AboutInfo = () => {
       <section className="about-bottom-bg">
         <article className="h-[1000px] flex items-center w-full max-w-[950px] mx-auto">
           <div className="z-10">
-            <h2 className="text-6xl leading-[4rem] w-full max-w-[50rem] font-bold uppercase">
-              Proof Of Knowledge
+            <h2 className="text-5xl leading-[4rem] w-full max-w-[58rem] font-extrabold font-montserrat uppercase">
+              Proof Of Entanglement
             </h2>
             <p className="opacity-80 text-2xl py-6 text-[#effcff]">
               This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is.
             </p>
             <div className="py-4">
               <button className="uppercase inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
-                <span className="font-montserrat ">Watch A Video About S.Q.E</span>
+                <span className="font-montserrat ">Watch A Video About POK</span>
                 <Arrow />
               </button>
             </div>

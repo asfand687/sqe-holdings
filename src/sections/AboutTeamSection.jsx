@@ -12,65 +12,81 @@ const AboutTeamSection = () => {
         The SQE Team
       </h2>
       <article className="py-20 gap-y-20">
-        <section className="flex justify-center">
+        <section className="flex justify-center md:space-x-20">
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
-            <p className="max-w-[250px] text-base leading-5">
-              This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio.
-            </p>
+            <div className="max-w-[250px] text-base leading-5 uppercase">
+              <h2 className="font-bold">Hamid Pishdadian</h2>
+              <p className="italic pb-4">CEO & Creator</p>
+              <p className="text-xs">This is about Hamid.</p>
+            </div>
           </article>
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
-            <p className="max-w-[250px] text-base leading-5">
-              This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio.
-            </p>
+            <div className="max-w-[250px] text-base leading-5 uppercase">
+              <h2 className="font-bold">Hamid Pishdadian</h2>
+              <p className="italic pb-4">CEO & Creator</p>
+              <p className="text-xs">This is about Hamid.</p>
+            </div>
           </article>
         </section>
 
-        <section className="flex justify-center">
+        <section className="flex justify-center md:space-x-20">
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
-            <p className="max-w-[250px] text-base leading-5">
-              This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio.
-            </p>
+            <div className="max-w-[250px] text-base leading-5 uppercase">
+              <h2 className="font-bold">Hamid Pishdadian</h2>
+              <p className="italic pb-4">CEO & Creator</p>
+              <p className="text-xs">This is about Hamid.</p>
+            </div>
           </article>
           <article className="flex justify-center items-center relative">
             <Polygon key={1} className="absolute bottom-0 left-[13px] w-24 z-0" />
             <Hexagon className="w-72 h-72 z-10" />
-            <p className="max-w-[250px] text-base leading-5">
-              This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio.
-            </p>
+            <div className="max-w-[250px] text-base leading-5 uppercase">
+              <h2 className="font-bold">Hamid Pishdadian</h2>
+              <p className="italic pb-4">CEO & Creator</p>
+              <p className="text-xs">This is about Hamid.</p>
+            </div>
           </article>
         </section>
 
-        <section className="flex justify-center">
+        <section className="flex justify-center md:space-x-20">
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
-            <p className="max-w-[250px] text-base leading-5">
-              This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio.
-            </p>
+            <div className="max-w-[250px] text-base leading-5 uppercase">
+              <h2 className="font-bold">Hamid Pishdadian</h2>
+              <p className="italic pb-4">CEO & Creator</p>
+              <p className="text-xs">This is about Hamid.</p>
+            </div>
           </article>
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
-            <p className="max-w-[250px] text-base leading-5">
-              This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio.
-            </p>
+            <div className="max-w-[250px] text-base leading-5 uppercase">
+              <h2 className="font-bold">Hamid Pishdadian</h2>
+              <p className="italic pb-4">CEO & Creator</p>
+              <p className="text-xs">This is about Hamid.</p>
+            </div>
           </article>
         </section>
 
-        <section className="flex justify-center">
+        <section className="flex justify-center md:space-x-20">
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
-            <p className="max-w-[250px] text-base leading-5">
-              This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio.
-            </p>
+            <div className="max-w-[250px] text-base leading-5 uppercase">
+              <h2 className="font-bold">Hamid Pishdadian</h2>
+              <p className="italic pb-4">CEO & Creator</p>
+              <p className="text-xs">This is about Hamid.</p>
+            </div>
           </article>
           <article className="flex justify-center items-center relative">
             <Polygon key={2} className="absolute top-0 left-[190px] w-24 z-0" />
             <Hexagon className="w-72 h-72 z-10" />
-            <p className="max-w-[250px] text-base leading-5">
-              This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio. This is a brief bio.
-            </p>
+            <div className="max-w-[250px] text-base leading-5 uppercase">
+              <h2 className="font-bold">Hamid Pishdadian</h2>
+              <p className="italic pb-4">CEO & Creator</p>
+              <p className="text-xs">This is about Hamid.</p>
+            </div>
           </article>
         </section>
       </article>

@@ -17,11 +17,11 @@ const LearningSectionHero = () => {
         <div className="absolute right-0 top-0 w-full z-0 h-screen bg-learning-hero-02"></div>
       </div>
 
-      <div className="w-full max-w-lg mx-auto relative">
-        <h2 className="text-center text-2xl uppercase font-semibold">
+      <div className="w-full max-w-[900px] mx-auto relative">
+        <h2 className="text-center text-2xl max-w-lg mx-auto uppercase font-semibold">
           WELCOME TO THE SQE LEARNING CENTER
         </h2>
-        <p className="text-center leading-5 pt-6 pb-10">
+        <p className="text-center text-3xl leading-8 pt-6 pb-10 text-[#042257]">
           Explore everything from how to use our features to the blockchain basics to the complexities of secure quantum entanglement.
         </p>
       </div>
