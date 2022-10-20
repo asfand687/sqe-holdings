@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeCompetitorComparisonSection = () => {
   return (
-    <section className="relative">
+    <section className="relative hidden md:block">
       <div className="bg-[#002660] bg-opacity-50 text-white py-20">
         <div className="max-w-6xl mx-auto space-y-14 px-4">
           <article className="flex justify-end">

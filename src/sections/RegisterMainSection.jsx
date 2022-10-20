@@ -77,57 +77,57 @@ const RegisterMainSection = () => {
 
 
   return (
-    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white min-h-[calc(100vh-234px)">
+    <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white min-h-[calc(100vh-234px) px-4">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
         <RegisterSectionTitle text="Register" />
-        <form onSubmit={handleSubmit} className=" max-w-2xl mx-auto">
+        <form onSubmit={handleSubmit} className="w-full md:max-w-2xl mx-auto">
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute top-6 left-0" />
+            <InputPolygon className="absolute w-[330px] md:w-full top-6 left-0" />
             <input
               value={registerData.username}
               onChange={({ target }) => setRegisterData({ ...registerData, username: target.value })}
               type="text"
-              className="w-full h-[61px] bg-transparent  rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="USERNAME" required />
+              className="w-full h-[61px] bg-transparent  rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="USERNAME" required />
             <p className="pt-1 pl-8 uppercase">Username</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute top-6 left-0" />
+            <InputPolygon className="absolute w-[330px] md:w-full top-6 left-0" />
             <input
               value={registerData.confirmUsername}
               onChange={({ target }) => setRegisterData({ ...registerData, confirmUsername: target.value })}
               type="text"
-              className="w-full h-[61px] bg-transparent rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="CONFIRM USERNAME" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="CONFIRM USERNAME" required />
             <p className="pt-1 pl-8 uppercase">Confirm Username</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute top-6 left-0" />
+            <InputPolygon className="absolute w-[330px] md:w-full top-6 left-0" />
             <input
               value={registerData.password}
               onChange={({ target }) => setRegisterData({ ...registerData, password: target.value })}
               type="password"
-              className="w-full h-[61px] bg-transparent rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="PASSWORD" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="PASSWORD" required />
             <p className="pt-1 pl-8 uppercase">Password</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute top-6 left-0" />
+            <InputPolygon className="absolute w-[330px] md:w-full top-6 left-0" />
             <input
               value={registerData.confirmPassword}
               onChange={({ target }) => setRegisterData({ ...registerData, confirmPassword: target.value })}
               type="password"
-              className="w-full h-[61px] bg-transparent rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="CONFIRM PASSWORD" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="CONFIRM PASSWORD" required />
             <p className="pt-1 pl-8 uppercase">Confirm Password</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute top-6 left-0" />
+            <InputPolygon className="absolute w-[330px] md:w-full top-6 left-0" />
             <input
               value={registerData.email}
               onChange={({ target }) => setRegisterData({ ...registerData, email: target.value })}
               type="email"
-              className="w-full h-[61px] bg-transparent rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="EMAIL ADDRESS" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="EMAIL ADDRESS" required />
             <p className="pt-1 pl-8 uppercase">Email Address</p>
           </div>
 

@@ -50,22 +50,22 @@ const Login = () => {
           {/* <h3 className="text-sm font-medium">*Please Login to complete your registration</h3> */}
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute top-6 left-0" />
+            <InputPolygon className="absolute w-[330px] md:w-full top-6 left-0" />
             <input
               value={loginData.email}
               onChange={({ target }) => setLoginData({ ...loginData, email: target.value })}
               type="email"
-              className="w-full h-[61px] bg-transparent  rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="EMAIL ADDRESS" required />
+              className="w-full h-[61px]  rounded-[30px] bg-transparent outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="EMAIL ADDRESS" required />
             <p className="pt-1 pl-8 uppercase">Enter Email</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute top-6 left-0" />
+            <InputPolygon className="absolute w-[330px] md:w-full top-6 left-0" />
             <input
               value={loginData.password}
               onChange={({ target }) => setLoginData({ ...loginData, password: target.value })}
               type="password"
-              className="w-full h-[61px] bg-transparent  rounded-[30px] bg-[#DEDEDE] outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="PASSWORD" required />
+              className="w-full h-[61px] rounded-[30px] bg-transparent outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="PASSWORD" required />
             <p className="pt-1 pl-8 uppercase">Password</p>
           </div>
           <div className="pt-8 flex justify-center">

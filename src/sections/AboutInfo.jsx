@@ -6,14 +6,14 @@ import { ReactComponent as Polygon } from '../assets/polygon.svg'
 
 const AboutInfo = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-20 px-4">
       <section className="w-full max-w-[950px] mx-auto">
         <article className="relative">
           <div className="absolute -bottom-56 -left-[1550px]">
             <img src={AboutBg} alt="Background Asset" />
           </div>
-          <section>
-            <h2 className="text-[56px] leading-[4rem] w-full max-w-[50rem] font-extrabold font-montserrat uppercase">
+          <section className="text-center md:text-left">
+            <h2 className="text-[2.6rem] md:text-[56px] leading-[3.5rem] md:leading-[4rem] w-full max-w-[50rem] font-extrabold font-montserrat uppercase">
               Secure Quantum Exchange & Stimulated Quantum Engagement
             </h2>
             <div className="opacity-80 text-2xl space-y-6 py-6 text-[#effcff]">
@@ -35,10 +35,10 @@ const AboutInfo = () => {
         </article>
       </section>
 
-      <section className="about-bottom-bg">
-        <article className="h-[1000px] flex items-center w-full max-w-[950px] mx-auto">
+      <section className="about-bottom-bg text-center md:text-left">
+        <article className="md:h-[1000px] flex items-center w-full max-w-[950px] mx-auto">
           <div className="z-10">
-            <h2 className="text-5xl leading-[4rem] w-full max-w-[58rem] font-extrabold font-montserrat uppercase">
+            <h2 className="text-[2.4rem] md:text-[56px] leading-[3.5rem] md:leading-[4rem] w-full max-w-[58rem] font-extrabold font-montserrat uppercase">
               Proof Of Entanglement
             </h2>
             <p className="opacity-80 text-2xl py-6 text-[#effcff]">
@@ -55,7 +55,7 @@ const AboutInfo = () => {
       </section>
 
       <section className="relative h-[90vh] bg-about-bottom-right">
-        <article className="flex justify-center py-32">
+        <article className="flex justify-center py-32 px-4">
           <button>
             <div className="w-[650px] h-[90px] clip-primary bg-gradient flex justify-center items-center">
               <div className="w-[645px] h-[85px] clip-primary bg-[#011132] flex items-center justify-center">

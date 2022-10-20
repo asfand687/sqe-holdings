@@ -5,7 +5,7 @@ import LogoPolygon from '../assets/logo-mark-solid.png'
 
 const LearningCenterBottom = () => {
   return (
-    <section className="pb-20 h-[550px] space-y-32 relative">
+    <section className="pb-20 md:h-[550px] space-y-16 md:space-y-32 relative">
       <Polygon className="absolute w-36 left-16 -top-32" />
       <div className="absolute right-48 top-0">
         <img src={LogoPolygon} alt="Logo Polygon" />

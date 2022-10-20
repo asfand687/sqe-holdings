@@ -8,11 +8,11 @@ const AboutTeamSection = () => {
       <Polygon key={3} className="absolute -top-20 -left-8 w-24 z-0" />
       <Polygon key={5} className="absolute bottom-[400px] -left-52 w-96 z-0" />
       <Polygon key={4} className="absolute top-0 right-8 w-32 z-0" />
-      <h2 className="font-black text-center hero-text text-8xl font-montserrat uppercase">
+      <h2 className="font-black text-center hero-text text-7xl 2xl:text-8xl font-montserrat uppercase">
         The SQE Team
       </h2>
-      <article className="py-20 gap-y-20">
-        <section className="flex justify-center md:space-x-20">
+      <article className="py-20 gap-y-20 px-4">
+        <section className="flex flex-col md:flex-row justify-center md:space-x-20">
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5 uppercase">
@@ -31,7 +31,7 @@ const AboutTeamSection = () => {
           </article>
         </section>
 
-        <section className="flex justify-center md:space-x-20">
+        <section className="flex flex-col md:flex-row justify-center md:space-x-20">
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5 uppercase">
@@ -51,7 +51,7 @@ const AboutTeamSection = () => {
           </article>
         </section>
 
-        <section className="flex justify-center md:space-x-20">
+        <section className="flex flex-col md:flex-row justify-center md:space-x-20">
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5 uppercase">
@@ -70,7 +70,7 @@ const AboutTeamSection = () => {
           </article>
         </section>
 
-        <section className="flex justify-center md:space-x-20">
+        <section className="flex flex-col md:flex-row justify-center md:space-x-20">
           <article className="flex justify-center items-center">
             <Hexagon className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5 uppercase">

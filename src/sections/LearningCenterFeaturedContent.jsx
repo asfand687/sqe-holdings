@@ -4,42 +4,42 @@ import LogoMark from '../assets/logo-mark.png'
 
 const LearningCenterFeaturedContent = () => {
   return (
-    <section>
-      <section className="py-10 relative">
+    <section className="px-4">
+      <section className="md:py-10 relative">
         <Polygon className="absolute w-72 right-16 top-4" />
         <div className="absolute -right-[620px] -top-[600px] w-full h-[240vh] z-0 bg-learning-featured"></div>
         <h2 className="text-6xl font-black text-center uppercase py-4 font-montserrat pb-20 text-[#042257]">
           Featured Content
         </h2>
-        <section className="grid grid-cols-3 gap-14  max-w-7xl mx-auto relative z-10">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-14  max-w-7xl mx-auto relative z-10">
           <article className="space-y-4">
             <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-            <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+            <h2 className="text-2xl block text-center md:text-left text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
           </article>
 
           <article className="space-y-4">
             <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-            <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+            <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
           </article>
 
           <article className="space-y-4">
             <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-            <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+            <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
           </article>
 
           <article className="space-y-4">
             <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-            <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+            <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
           </article>
 
           <article className="space-y-4">
             <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-            <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+            <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
           </article>
 
           <article className="space-y-4">
             <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-            <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+            <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
           </article>
         </section>
       </section>
@@ -49,7 +49,7 @@ const LearningCenterFeaturedContent = () => {
         <div className="absolute z-0 w-[550px] right-32 -top-12">
           <img src={LogoMark} alt="logo mark" />
         </div>
-        <h2 className="text-6xl font-semibold text-center uppercase py-4 font-montserrat text-[#042257]">
+        <h2 className="text-4xl md:text-6xl font-semibold text-center uppercase py-4 font-montserrat text-[#042257]">
           Categories
         </h2>
 
@@ -65,65 +65,65 @@ const LearningCenterFeaturedContent = () => {
             All Content
           </h2>
 
-          <section className="grid grid-cols-3 gap-14  max-w-7xl mx-auto relative z-10">
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 md:gap-x-14  gap-y-14 max-w-7xl mx-auto relative z-10">
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
 
             <article className="space-y-4">
               <div className="w-[350px] h-[210px] bg-[#003E78]"></div>
-              <h2 className="text-2xl block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
+              <h2 className="text-2xl text-center md:text-left block  text-[#003E78] font-semibold">TITLE OF VIDEO</h2>
             </article>
           </section>
         </article>
