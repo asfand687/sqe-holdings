@@ -79,23 +79,6 @@
   background: linear-gradient(269.97deg, #002CEE -4.13%, #00C8E3 105.18%);
 }
 
-.checkbox-round {
-  width: 1.3em;
-  height: 1.3em;
-  background-color: transparent;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 2px solid #1787ff;
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.checkbox-round:checked {
-  background-color: #1787ff6c;
-}
-
 .hero-bg {
   width: 100%;
   background-image:
@@ -145,16 +128,11 @@
 
 
 .bg-hex {
-  background: url("./assets/hexagon.svg");
+  background: url("./assets/hexagon-light.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bg-hex {
-  background: url("./assets/hex-shape-unselected.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .bg-hex.clr-white {
   background: url("./assets/hex-shape-selected.svg");
@@ -359,4 +337,58 @@
   background: url("./assets/dashboard-bottom-bg.png") no-repeat;
   background-position: right 0px top 100px;
   background-size: 50%;
+}
+
+.checkbox-round {
+  position: relative;
+  top: 0px;
+  right: 2px;
+  z-index: 10;
+  width: 1.45rem;
+  height: 1.3rem;
+  background-color: transparent;
+  vertical-align: middle;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background: linear-gradient(180deg, #46CEEC 0%, #0036C1 100%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transform: rotate(90deg);
+}
+
+
+.hexagon-checkbox {
+  width: 100px;
+  height: 57.735px;
+  background: #46CEEC;
+  position: relative;
+  transform: scale(0.25);
+}
+
+.hexagon-checkbox::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid #46CEEC;
+}
+
+.hexagon-checkbox::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid #46CEEC;
 }
