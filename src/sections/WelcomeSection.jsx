@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase'
 import { doc, updateDoc } from '@firebase/firestore'
 import { db } from '../firebase'
-import { ReactComponent as CheckboxPolygon } from '../assets/checkbox-polygon.svg'
+import Checkbox from '../components/Checkbox'
 
 const WelcomeSection = () => {
 
@@ -67,86 +67,26 @@ const WelcomeSection = () => {
         <RegisterSectionTitle text="Customize Your Dashboard" className="max-w-3xl text-center mx-auto pb-8 contact__title-bg-gradient" />
         <form onSubmit={handleSubmit} className="space-y-4 uppercase flex">
           <div className="space-y-4">
-            <article className="checkbox-container">
-              <label className="inline-flex items-center ">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6 z-20" />
-                <input onChange={() => setSecureMessagingSelected(!secureMessagingSelected)} type="checkbox" className="checkbox-round" value="Secure Messaging" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">Secure Messaging</span>
-              </label>
-            </article>
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setQueCoinSelected(!queCoinSelected)} type="checkbox" className="checkbox-round" value="QUECOIN" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">QUECOIN - SQE’S QUANTUM SECURE SEMI-STABLE CRYPTO</span>
-              </label>
-            </article>
+            <Checkbox label="Secure Messaging" info="info text info text info text info text text inf" right="right-[500px] -top-2" infoPos="p-4 -top-[50px] right-[180px]" onChange={() => setSecureMessagingSelected(!secureMessagingSelected)} />
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setDigitalWalletSelected(!digitalWalletSelected)} type="checkbox" className="checkbox-round" value="Digital Wallet" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">DIGITAL WALLET & CRYPTO EXCHANGE</span>
-              </label>
-            </article>
+            <Checkbox label="QUECOIN - SQE’S QUANTUM SECURE SEMI-STABLE CRYPTO" info="info text info text info text info text text inf" right="right-[150px] -top-2" infoPos="p-4 -top-[50px] -right-[160px]" onChange={() => setQueCoinSelected(!queCoinSelected)} />
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setSecureGamingSelected(!secureGamingSelected)} type="checkbox" className="checkbox-round" value="Secure Gaming" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">SECURE GAMING</span>
-              </label>
-            </article>
+            <Checkbox label="DIGITAL WALLET & CRYPTO EXCHANGE" info="info text info text info text info text text inf" right="right-[350px] -top-2" infoPos="p-4 -top-[0px] -right-[150px]" onChange={() => setDigitalWalletSelected(!digitalWalletSelected)} />
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setPdaSelected(!pdaSelected)} type="checkbox" className="checkbox-round" value="PDA" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">PERSONAL DIGITAL ASSISTANT (PDA) - AUTOMATE DAILY TASKS & WORKFLOW</span>
-              </label>
-            </article>
+            <Checkbox label="SECURE GAMING" right="right-[570px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] right-[50px]" onChange={() => setSecureGamingSelected(!secureGamingSelected)} />
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setHandsFreeMinerSelected(!handsFreeMinerSelected)} type="checkbox" className="checkbox-round" value="Hands-Free Miner" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">BECOMING A HANDS-FREE MINER FOR SQE</span>
-              </label>
-            </article>
+            <Checkbox label="PERSONAL DIGITAL ASSISTANT (PDA) - AUTOMATE DAILY TASKS & WORKFLOW" right="-right-[30px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] -right-[400px]" onChange={() => setPdaSelected(!pdaSelected)} />
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setNoCodeSmartContractsSelected(!noCodeSmartContractsSelected)} type="checkbox" className="checkbox-round" value="No Code Smart Contracts" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">NO-CODE SMART CONTRACTS</span>
-              </label>
-            </article>
+            <Checkbox label="BECOMING A HANDS-FREE MINER FOR SQE" right="right-[310px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[20px] -right-[30px]" onChange={() => setHandsFreeMinerSelected(!handsFreeMinerSelected)} />
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setNoCodeMobileAppBuilderSelected(!noCodeMobileAppBuilderSelected)} type="checkbox" className="checkbox-round" value="Mobile App Builder" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">NO-CODE MOBILE APP BUILDER</span>
-              </label>
-            </article>
+            <Checkbox label="NO-CODE SMART CONTRACTS" right="right-[430px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[20px] right-[60px]" onChange={() => setNoCodeSmartContractsSelected(!noCodeSmartContractsSelected)} />
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setNoCodeSmartContractComponentsSelected(!noCodeSmartContractComponenetsSelected)} type="checkbox" className="checkbox-round" value="Smart Contract Components" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">BECOMING A DEVELOPER FOR NO-CODE SMART CONTRACT COMPONENTS</span>
-              </label>
-            </article>
+            <Checkbox label="NO-CODE MOBILE APP BUILDER" right="right-[430px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] right-[80px]" onChange={() => setNoCodeMobileAppBuilderSelected(!noCodeMobileAppBuilderSelected)} />
 
-            <article>
-              <label className="inline-flex items-center">
-                <CheckboxPolygon className="absolute md:left-[71px] w-6" />
-                <input onChange={() => setNoCodeAppBuilderComponentsSelected(!noCodeAppBuilderComponenetsSelected)} type="checkbox" className="checkbox-round" value="No-Code App Builder" />
-                <span className="ml-8 text-sm md:text-xl font-bold max-w-[300px] md:max-w-full">BECOMING A DEVELOPER FOR NO-CODE APP BUILDER COMPONENTS</span>
-              </label>
-            </article>
+            <Checkbox label="BECOMING A DEVELOPER FOR NO-CODE SMART CONTRACT COMPONENTS" right="-right-[10px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] -right-[320px]" onChange={() => setNoCodeSmartContractComponentsSelected(!noCodeSmartContractComponenetsSelected)} />
 
+            <Checkbox label="BECOMING A DEVELOPER FOR NO-CODE APP BUILDER COMPONENTS" right="-right-[10px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] -right-[320px]" onChange={() => setNoCodeAppBuilderComponentsSelected(!noCodeAppBuilderComponenetsSelected)} />
             <article className="pt-[3rem] text-center">
               <button type="submit">
                 <div className="w-[430px] h-[80px] clip-primary bg-gradient flex justify-center items-center">
