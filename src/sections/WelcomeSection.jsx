@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import RegisterSectionTitle from '../components/RegisterSectionTitle'
 import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase'
 import { doc, updateDoc } from '@firebase/firestore'
 import { db } from '../firebase'
 import Checkbox from '../components/Checkbox'
+import CustomizeDashboardHeading from "../assets/customize-dashboard-heading.png"
 
 const WelcomeSection = () => {
 
@@ -103,7 +103,7 @@ const WelcomeSection = () => {
   return (
     <section className="p-4 pb-16 relative lg:px-6 text-white">
       <article className="w-full lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto">
-        <RegisterSectionTitle text="Customize Your Dashboard" className="max-w-3xl text-center mx-auto pb-8 contact__title-bg-gradient" />
+        <img className="mx-auto py-6" src={CustomizeDashboardHeading} alt="Customize Dashboard"/>
         <form onSubmit={handleSubmit} className="space-y-4 uppercase flex">
           <div className="space-y-4">
 
