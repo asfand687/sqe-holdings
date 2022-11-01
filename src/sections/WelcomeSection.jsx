@@ -20,6 +20,18 @@ const WelcomeSection = () => {
   const [noCodeSmartContractComponenetsSelected, setNoCodeSmartContractComponentsSelected] = useState(false)
   const [noCodeAppBuilderComponenetsSelected, setNoCodeAppBuilderComponentsSelected] = useState(false)
 
+  const [showSecureMessagingInfo, setShowSecureMessagingInfo] = useState(false)
+  const [showQuecoinInfo, setShowQuecoinInfo] = useState(false)
+  const [showDigitalWalletInfo, setShowDigitalWalletInfo] = useState(false)
+  const [showSecureGamingInfo, setShowSecureGamingInfo] = useState(false)
+  const [showPDAInfo, setShowPDAInfo] = useState(false)
+  const [showHandsFreeMinerInfo, setShowHandsFreeMinerInfo] = useState(false)
+  const [showNoCodeSmartContractInfo, setShowNoCodeSmartContractInfo] = useState(false)
+  const [showNoCodeMobileAppBuilderInfo, setShowNoCodeMobileAppBuilderInfo] = useState(false)
+  const [showNoCodeSmartContractComponenetsInfo, setShowNoCodeSmartContractComponenetsInfo] = useState(false)
+  const [showNoCodeAppBuilderComponenetsInfo, setShowNoCodeAppBuilderComponenetsInfo] = useState(false)
+  
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     let selectedOptionsArray = []
@@ -59,6 +71,34 @@ const WelcomeSection = () => {
   //   getUser()
   // }, [])
 
+  const resetInfoBoxes = () => {
+    setShowSecureMessagingInfo(false)
+    setShowQuecoinInfo(false)
+    setShowDigitalWalletInfo(false)
+    setShowSecureGamingInfo(false)
+    setShowPDAInfo(false)
+    setShowHandsFreeMinerInfo(false)
+    setShowNoCodeSmartContractInfo(false)
+    setShowNoCodeMobileAppBuilderInfo(false)
+    setShowNoCodeSmartContractComponenetsInfo(false)
+    setShowNoCodeAppBuilderComponenetsInfo(false)
+  }
+
+  const handleToggle = (info) => {
+    resetInfoBoxes()
+    if(info === "showSecureMessagingInfo") setShowSecureMessagingInfo(!showSecureMessagingInfo);
+    if(info === "showQuecoinInfo") setShowQuecoinInfo(!showQuecoinInfo)
+    if(info === "showDigitalWalletInfo") setShowDigitalWalletInfo(!showDigitalWalletInfo)
+    if(info === "showSecureGamingInfo") setShowSecureGamingInfo(!showSecureGamingInfo)
+    if(info === "showPDAInfo") setShowPDAInfo(!showPDAInfo)
+    if(info === "showHandsFreeMinerInfo") setShowHandsFreeMinerInfo(!showHandsFreeMinerInfo)
+    if(info === "showNoCodeSmartContractInfo") setShowNoCodeSmartContractInfo(!showNoCodeSmartContractInfo)
+    if(info === "showNoCodeMobileAppBuilderInfo") setShowNoCodeMobileAppBuilderInfo(!showNoCodeMobileAppBuilderInfo)
+    if(info === "showNoCodeSmartContractComponenetsInfo") setShowNoCodeSmartContractComponenetsInfo(!showNoCodeSmartContractComponenetsInfo)
+    if(info === "showNoCodeAppBuilderComponenetsInfo") setShowNoCodeAppBuilderComponenetsInfo(!showNoCodeAppBuilderComponenetsInfo)
+    
+  }
+
 
   return (
     <section className="p-4 pb-16 relative lg:px-6 text-white">
@@ -67,25 +107,103 @@ const WelcomeSection = () => {
         <form onSubmit={handleSubmit} className="space-y-4 uppercase flex">
           <div className="space-y-4">
 
-            <Checkbox label="Secure Messaging" info="info text info text info text info text text inf" right="right-[500px] -top-2" infoPos="p-4 -top-[50px] right-[180px]" onChange={() => setSecureMessagingSelected(!secureMessagingSelected)} />
+            <Checkbox 
+              label="Secure Messaging" info="info text info text info text info text text inf" 
+              right="right-[500px] -top-2" 
+              infoPos="p-4 -top-[50px] -right-[400px]" 
+              showInfo={showSecureMessagingInfo} 
+              showInfoToggle={() => handleToggle("showSecureMessagingInfo")} 
+              onChange={() => setSecureMessagingSelected(!secureMessagingSelected)} 
+            />
 
-            <Checkbox label="QUECOIN - SQE’S QUANTUM SECURE SEMI-STABLE CRYPTO" info="info text info text info text info text text inf" right="right-[150px] -top-2" infoPos="p-4 -top-[50px] -right-[160px]" onChange={() => setQueCoinSelected(!queCoinSelected)} />
+            <Checkbox 
+              label="QUECOIN - SQE’S QUANTUM SECURE SEMI-STABLE CRYPTO" 
+              info="info text info text info text info text text inf" 
+              right="right-[150px] -top-2" 
+              infoPos="p-4 -top-[50px] -right-[400px]" 
+              showInfo={showQuecoinInfo} 
+              showInfoToggle={() => handleToggle("showQuecoinInfo")} 
+              onChange={() => setQueCoinSelected(!queCoinSelected)} 
+            />
 
-            <Checkbox label="DIGITAL WALLET & CRYPTO EXCHANGE" info="info text info text info text info text text inf" right="right-[350px] -top-2" infoPos="p-4 -top-[0px] -right-[150px]" onChange={() => setDigitalWalletSelected(!digitalWalletSelected)} />
+            <Checkbox 
+              label="DIGITAL WALLET & CRYPTO EXCHANGE" 
+              info="info text info text info text info text text inf" 
+              right="right-[350px] -top-2" 
+              infoPos="p-4 -top-[50px] -right-[400px]" 
+              showInfo={showDigitalWalletInfo} 
+              showInfoToggle={() => handleToggle("showDigitalWalletInfo")} 
+              onChange={() => setDigitalWalletSelected(!digitalWalletSelected)} 
+            />
 
-            <Checkbox label="SECURE GAMING" right="right-[570px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] right-[50px]" onChange={() => setSecureGamingSelected(!secureGamingSelected)} />
+            <Checkbox 
+              label="SECURE GAMING" 
+              info="info text info text info text info text text inf" 
+              right="right-[570px] -top-2" 
+              infoPos="p-4 -top-[50px] -right-[400px]" 
+              showInfo={showSecureGamingInfo} 
+              showInfoToggle={() => handleToggle("showSecureGamingInfo")} 
+              onChange={() => setSecureGamingSelected(!secureGamingSelected)} 
+            />
 
-            <Checkbox label="PERSONAL DIGITAL ASSISTANT (PDA) - AUTOMATE DAILY TASKS & WORKFLOW" right="-right-[30px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] -right-[400px]" onChange={() => setPdaSelected(!pdaSelected)} />
+            <Checkbox 
+              label="PERSONAL DIGITAL ASSISTANT (PDA) - AUTOMATE DAILY TASKS & WORKFLOW" 
+              right="-right-[30px] -top-2" 
+              info="info text info text info text info text text inf" 
+              infoPos="p-4 -top-[50px] -right-[400px]"
+              showInfo={showPDAInfo} 
+              showInfoToggle={() => handleToggle("showPDAInfo")} 
+              onChange={() => setPdaSelected(!pdaSelected)} 
+            />
 
-            <Checkbox label="BECOMING A HANDS-FREE MINER FOR SQE" right="right-[310px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[20px] -right-[30px]" onChange={() => setHandsFreeMinerSelected(!handsFreeMinerSelected)} />
+            <Checkbox 
+              label="BECOMING A HANDS-FREE MINER FOR SQE" 
+              right="right-[310px] -top-2" info="info text info text info text info text text inf" 
+              infoPos="p-4 -top-[20px] -right-[400px]" 
+              showInfo={showHandsFreeMinerInfo} 
+              showInfoToggle={() => handleToggle("showHandsFreeMinerInfo")} 
+              onChange={() => setHandsFreeMinerSelected(!handsFreeMinerSelected)} 
+            />
 
-            <Checkbox label="NO-CODE SMART CONTRACTS" right="right-[430px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[20px] right-[60px]" onChange={() => setNoCodeSmartContractsSelected(!noCodeSmartContractsSelected)} />
+            <Checkbox 
+              label="NO-CODE SMART CONTRACTS" 
+              right="right-[430px] -top-2" 
+              info="info text info text info text info text text inf" 
+              infoPos="p-4 -top-[20px] -right-[400px]" 
+              showInfo={showNoCodeSmartContractInfo} 
+              showInfoToggle={() => handleToggle("showNoCodeSmartContractInfo")} 
+              onChange={() => setNoCodeSmartContractsSelected(!noCodeSmartContractsSelected)} 
+            />
 
-            <Checkbox label="NO-CODE MOBILE APP BUILDER" right="right-[430px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] right-[80px]" onChange={() => setNoCodeMobileAppBuilderSelected(!noCodeMobileAppBuilderSelected)} />
+            <Checkbox 
+              label="NO-CODE MOBILE APP BUILDER" 
+              right="right-[430px] -top-2" 
+              info="info text info text info text info text text inf" 
+              infoPos="p-4 -top-[50px] -right-[400px]" 
+              showInfo={showNoCodeMobileAppBuilderInfo} 
+              showInfoToggle={() => handleToggle("showNoCodeMobileAppBuilderInfo")} 
+              onChange={() => setNoCodeMobileAppBuilderSelected(!noCodeMobileAppBuilderSelected)} 
+            />
 
-            <Checkbox label="BECOMING A DEVELOPER FOR NO-CODE SMART CONTRACT COMPONENTS" right="-right-[10px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] -right-[320px]" onChange={() => setNoCodeSmartContractComponentsSelected(!noCodeSmartContractComponenetsSelected)} />
+            <Checkbox 
+              label="BECOMING A DEVELOPER FOR NO-CODE SMART CONTRACT COMPONENTS" 
+              right="-right-[10px] -top-2" 
+              info="info text info text info text info text text inf" 
+              infoPos="p-4 -top-[50px] -right-[400px]" 
+              showInfo={showNoCodeSmartContractComponenetsInfo} 
+              showInfoToggle={() => handleToggle("showNoCodeSmartContractComponenetsInfo")} 
+              onChange={() => setNoCodeSmartContractComponentsSelected(!noCodeSmartContractComponenetsSelected)} 
+            />
 
-            <Checkbox label="BECOMING A DEVELOPER FOR NO-CODE APP BUILDER COMPONENTS" right="-right-[10px] -top-2" info="info text info text info text info text text inf" infoPos="p-4 -top-[50px] -right-[320px]" onChange={() => setNoCodeAppBuilderComponentsSelected(!noCodeAppBuilderComponenetsSelected)} />
+            <Checkbox 
+              label="BECOMING A DEVELOPER FOR NO-CODE APP BUILDER COMPONENTS" 
+              right="-right-[10px] -top-2" info="info text info text info text info text text inf" 
+              infoPos="p-4 -top-[50px] -right-[400px]" 
+              showInfo={showNoCodeAppBuilderComponenetsInfo} 
+              showInfoToggle={() => handleToggle("showNoCodeAppBuilderComponenetsInfo")} 
+              onChange={() => setNoCodeAppBuilderComponentsSelected(!noCodeAppBuilderComponenetsSelected)} 
+            />
+
             <article className="pt-[3rem] text-center">
               <button type="submit">
                 <div className="w-[430px] h-[80px] clip-primary bg-gradient flex justify-center items-center">

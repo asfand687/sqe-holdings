@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { ReactComponent as CheckboxPolygon } from '../assets/checkbox-polygon.svg'
 import { ReactComponent as Info } from '../assets/info-icon.svg'
 
-const Checkbox = ({ onChange, label, info, right, infoPos }) => {
-  const [showInfo, setShowInfo] = useState(false)
+const Checkbox = ({ onChange, label, info, right, infoPos, showInfo, showInfoToggle }) => {
   return (
     <article className="checkbox-container relative">
       <div className={`absolute ${right}`}>
-        <Info onClick={() => setShowInfo(!showInfo)} className="w-6 cursor-pointer" />
+        <Info onClick={showInfoToggle} className="w-6 cursor-pointer" />
       </div>
       <div className={`absolute border border-gray-300 bg-[#071328] w-[300px] z-50 h-32 text-sm rounded-xl ${infoPos} ${showInfo ? "block" : "hidden"}`}>{info}</div>
       <label className="inline-flex items-center ">
