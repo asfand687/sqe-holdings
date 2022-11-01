@@ -7,8 +7,8 @@ import Twitter from '../assets/twitter.svg'
 const Footer = () => {
   return (
     <footer className="bg-white py-8 text-white border-t border-[#0E2043] relative z-10">
-      <div className="w-full lg:max-w-[1400px] text-[#042257] uppercase 2xl:max-w-full px-4 mx-auto flex flex-wrap justify-center space-y-4">
-        <div className="space-y-2 w-[250px]">
+      <div className="w-full lg:max-w-[1400px] text-[#042257] uppercase 2xl:max-w-full px-4 mx-auto flex flex-wrap justify-center space-y-4 md:space-y-0">
+        <div className="space-y-2 w-[200px]">
           <h2 className="font-bold pb-2">
             About
           </h2>
@@ -18,11 +18,8 @@ const Footer = () => {
           <p className="font-light">
             Team
           </p>
-          <p className="font-light">
-            Compare
-          </p>
         </div>
-        <div className=" space-y-2 w-[250px]">
+        <div className=" space-y-2 w-[200px]">
           <h2 className="font-bold pb-2">
             Services
           </h2>
@@ -35,30 +32,30 @@ const Footer = () => {
           <p className="font-light">
             Mining
           </p>
+          <p className="font-light">
+            Exchange
+          </p>
         </div>
-        <div className=" space-y-2 w-[250px]">
+        <div className=" space-y-2 w-[200px]">
           <h2 className=" font-bold pb-2">
             Learn
           </h2>
           <p className="font-light">
-            POK
+            POE
           </p>
           <p className="font-light">
             S.Q.E
           </p>
-          <p className="font-light">
-            Quoin
-          </p>
         </div>
-        <div className=" space-y-2 w-[250px]">
+        <div className=" space-y-2 w-[200px]">
           <h2 className=" font-bold pb-2">
-            Contact
+            Outreach
           </h2>
           <p className="font-light">
-            PR
+            Contact
           </p>
         </div>
-        <div className=" space-y-2 w-[250px]">
+        <div className=" space-y-2 w-[200px]">
           <h2 className=" font-bold pb-2">
             More On SQE
           </h2>

@@ -20,7 +20,6 @@ const WelcomeSection = () => {
   const [noCodeSmartContractComponenetsSelected, setNoCodeSmartContractComponentsSelected] = useState(false)
   const [noCodeAppBuilderComponenetsSelected, setNoCodeAppBuilderComponentsSelected] = useState(false)
 
-
   const handleSubmit = async (e) => {
     e.preventDefault()
     let selectedOptionsArray = []

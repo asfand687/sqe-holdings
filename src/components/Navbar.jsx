@@ -26,29 +26,29 @@ const Navbar = () => {
               <img src={Logo} alt="Logo" />
             </Link>
           </div>
-          <div className="flex space-x-10">
-            <Link className="font-montserrat" to="/">
+          <div className="flex space-x-10 tracking-widest">
+            <Link className="font-normal" to="/">
               Home
             </Link>
-            <Link className="font-montserrat" to="/about">
+            <Link className="font-normal" to="/about">
               About
             </Link>
-            <article className="font-montserrat">
-              <Link className="font-montserrat" to="/services">
+            <article className="font-normal">
+              <Link className="font-normal" to="/services">
                 Services
               </Link>
             </article>
-            <article className="font-montserrat">
-              <Link className="font-montserrat" to="/app">
+            <article className="font-normal">
+              <Link className="font-normal" to="/app">
                 The App
               </Link>
             </article>
-            <article className="font-montserrat">
-              <Link className="font-montserrat" to="/learning-center">
+            <article className="font-normal">
+              <Link className="font-normal" to="/learning-center">
                 Learn
               </Link>
             </article>
-            <Link className="font-montserrat" to="/contact">
+            <Link className="font-normal" to="/contact">
               Contact
             </Link>
           </div>
@@ -118,23 +118,23 @@ const Navbar = () => {
 
           <article className="flex flex-col space-y-6 text-center py-10 text-xl uppercase">
 
-            <Link className="font-montserrat" to="/about">
+            <Link to="/about">
               About
             </Link>
 
-            <Link className="font-montserrat" to="/services">
+            <Link to="/services">
               Services
             </Link>
 
-            <Link className="font-montserrat" to="/app">
+            <Link to="/app">
               The App
             </Link>
 
-            <Link className="font-montserrat" to="/learning-center">
+            <Link to="/learning-center">
               Learn
             </Link>
 
-            <Link className="font-montserrat" to="/contact">
+            <Link to="/contact">
               Contact
             </Link>
 

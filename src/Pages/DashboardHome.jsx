@@ -33,10 +33,7 @@ const DashboardHome = () => {
           }
         </article>
         <article className="md:pt-10">
-          <h2 className="uppercase font-bold text-xl">STANDARD MID-SIZE TITLE - ALL CAPS</h2>
-          <p className="max-w-5xl text-lg leading-snug py-16">Standard body text. Public Sans. Please also use this sheet banner as a background distinction for when you are clicked into the different tiles. Exchange page, Game page, etc</p>
-
-          <article>
+          <article className="md:pl-16">
             <button type="button">
               <Link to="/welcome">
                 <div className="w-[430px] h-[80px] clip-primary bg-gradient flex justify-center items-center -ml-20">
