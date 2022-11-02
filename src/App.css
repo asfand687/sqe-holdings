@@ -84,6 +84,10 @@
   background: url("./assets/hex-shape-selected.svg");
 }
 
+.bg-hex.dashboard {
+  background: url("./assets/services-hex.svg");
+}
+
 .services-bg {
   background-image: url("./assets/services-bg.png");
   background-repeat: no-repeat;

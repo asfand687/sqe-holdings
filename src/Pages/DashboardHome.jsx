@@ -24,9 +24,9 @@ const DashboardHome = () => {
         <article className="flex justify-center gap-y-10 px-4 flex-wrap lg:space-x-10">
           {
             dashboardOptions.map((item, i) => (
-              <Link key={i} to={`/dashboard/${item.toLowerCase().split(" ").join("-")}`} className="bg-hex w-[310px] h-[360px] flex items-center">
+              <Link key={i} to={`/dashboard/${item.toLowerCase().split(" ").join("-")}`} className="bg-hex dashboard w-[320px] h-[370px] flex items-center uppercase">
                 <div className="h-36 flex justify-center items-center w-full">
-                  <h2 className='text-white text-2xl text-center font-bold pb-1 font-montserrat'>{item}</h2>
+                  <h2 className='text-white text-3xl text-center font-bold pb-1 font-montserrat'>{item}</h2>
                 </div>
               </Link>
             ))
