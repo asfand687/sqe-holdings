@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ReactComponent as Hexagon } from '../assets/hex-shape.svg'
 import { ReactComponent as Polygon } from '../assets/polygon.svg'
 import Team01 from '../assets/team-01.png'
 import Team02 from '../assets/team-02.png'
