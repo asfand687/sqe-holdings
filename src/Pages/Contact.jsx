@@ -6,7 +6,7 @@ import { ReactComponent as TextboxPolygon } from '../assets/contact-textbox.svg'
 
 const Contact = () => {
   return (
-    <section className="bg-[#011842] relative">
+    <section className="bg-[#011842] relative px-4">
       <RegisterSectionTitle className="pre-register__heading-gradient pt-10 pb-12" text={"Contact"} />
       <div className="w-full max-w-[40rem] mx-auto pb-20">
         <form className="space-y-3">
@@ -14,18 +14,18 @@ const Contact = () => {
             <InputPolygon className="absolute w-full top-6 left-0" />
             <input
               type="text"
-              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4 relative z-10 top-[9px] left-8 placeholder:text-[#46CEEC]" placeholder="NAME" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4 pt-1 relative z-10 top-[9px] left-8 placeholder:text-[#46CEEC]" placeholder="NAME" required />
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
             <InputPolygon className="absolute w-full top-6 left-0" />
             <input
               type="text"
-              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4 relative z-10 top-[9px] left-8 placeholder:text-[#46CEEC]" placeholder="EMAIL" required />
+              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4 pt-1 relative z-10 top-[9px] left-8 placeholder:text-[#46CEEC]" placeholder="EMAIL" required />
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold max-w-[650px]">
-            <TextboxPolygon className="w-full absolute -top-8" />
+            <TextboxPolygon className="w-full absolute -top-24 md:-top-8" />
             <textarea style={{ resize: "none" }} className="w-full h-[200px] bg-transparent px-8 py-14 md:px-8 md:py-16 relative z-10 outline-0" placeholder='How Can We Help You?'></textarea>
           </div>
 
