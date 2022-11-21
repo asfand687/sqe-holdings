@@ -86,7 +86,6 @@ const PreRegister = () => {
               onChange={({ target }) => setRegisterData({ ...registerData, username: target.value })}
               type="text"
               className="w-full h-[61px] bg-transparent  rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 placeholder:text-[#46CEEC]" placeholder="USERNAME" required />
-            <p className="pt-1 pl-8 uppercase">Username</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
@@ -96,7 +95,6 @@ const PreRegister = () => {
               onChange={({ target }) => setRegisterData({ ...registerData, confirmUsername: target.value })}
               type="text"
               className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 placeholder:text-[#46CEEC]" placeholder="CONFIRM USERNAME" required />
-            <p className="pt-1 pl-8 uppercase">Confirm Username</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
@@ -106,7 +104,6 @@ const PreRegister = () => {
               onChange={({ target }) => setRegisterData({ ...registerData, password: target.value })}
               type="password"
               className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 placeholder:text-[#46CEEC]" placeholder="PASSWORD" required />
-            <p className="pt-1 pl-8 uppercase">Password</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
@@ -116,7 +113,6 @@ const PreRegister = () => {
               onChange={({ target }) => setRegisterData({ ...registerData, confirmPassword: target.value })}
               type="password"
               className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 placeholder:text-[#46CEEC]" placeholder="CONFIRM PASSWORD" required />
-            <p className="pt-1 pl-8 uppercase">Confirm Password</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
@@ -126,7 +122,6 @@ const PreRegister = () => {
               onChange={({ target }) => setRegisterData({ ...registerData, email: target.value })}
               type="email"
               className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4  relative z-10 top-[9px] left-4 placeholder:text-[#46CEEC]" placeholder="EMAIL ADDRESS" required />
-            <p className="pt-1 pl-8 uppercase">Email Address</p>
           </div>
 
           <div className="pt-8 flex justify-center">

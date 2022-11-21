@@ -56,7 +56,6 @@ const Login = () => {
               onChange={({ target }) => setLoginData({ ...loginData, email: target.value })}
               type="email"
               className="w-full h-[61px]  rounded-[30px] bg-transparent outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="EMAIL ADDRESS" required />
-            <p className="pt-1 pl-8 uppercase">Enter Email</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
@@ -66,7 +65,6 @@ const Login = () => {
               onChange={({ target }) => setLoginData({ ...loginData, password: target.value })}
               type="password"
               className="w-full h-[61px] rounded-[30px] bg-transparent outline-none px-4  relative z-10 top-[9px] left-4 uppercase  placeholder:text-[#46CEEC]" placeholder="PASSWORD" required />
-            <p className="pt-1 pl-8 uppercase">Password</p>
           </div>
           <div className="pt-8 flex justify-center">
             <button type="submit">

@@ -11,28 +11,25 @@ const Contact = () => {
       <div className="w-full max-w-[40rem] mx-auto pb-20">
         <form className="space-y-3">
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute  md:w-full top-6 left-0" />
+            <InputPolygon className="absolute w-full top-6 left-0" />
             <input
               type="text"
               className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4 relative z-10 top-[9px] left-8 placeholder:text-[#46CEEC]" placeholder="NAME" required />
-            <p className="pt-1 pl-[46px] uppercase">Name</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
-            <InputPolygon className="absolute  md:w-full top-6 left-0" />
+            <InputPolygon className="absolute w-full top-6 left-0" />
             <input
               type="text"
               className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4 relative z-10 top-[9px] left-8 placeholder:text-[#46CEEC]" placeholder="EMAIL" required />
-            <p className="pt-1 pl-[46px] uppercase">Email</p>
           </div>
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold max-w-[650px]">
-            <TextboxPolygon className="w-full absolute -top-16" />
-            <textarea style={{ resize: "none" }} className="w-full h-[200px] bg-transparent p-8 relative z-10 outline-0" placeholder='How Can We Help You?'></textarea>
-            <p className="pt-1 pl-[46px] uppercase">Message</p>
+            <TextboxPolygon className="w-full absolute -top-8" />
+            <textarea style={{ resize: "none" }} className="w-full h-[200px] bg-transparent px-8 py-14 md:px-8 md:py-16 relative z-10 outline-0" placeholder='How Can We Help You?'></textarea>
           </div>
 
-          <div className="pt-8 flex justify-center">
+          <div className="pt-20 flex justify-center">
             <button type="submit">
               <div className="w-[350px] h-[90px] clip-primary bg-gradient flex justify-center items-center">
                 <div className="w-[345px] h-[85px] clip-primary bg-[#011842] flex items-center justify-center">
