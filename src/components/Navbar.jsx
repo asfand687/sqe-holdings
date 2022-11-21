@@ -104,7 +104,7 @@ const Navbar = () => {
 
           <article className="flex flex-col space-y-6 text-center py-10 text-xl uppercase">
 
-            <a onClick={() => setShowDrawer(false)} href="http://www.sqeapp.com">
+            <a onClick={() => setShowDrawer(false)} href="/about">
               About
             </a>
 
@@ -112,7 +112,7 @@ const Navbar = () => {
               Services
             </Link>
 
-            <Link onClick={() => setShowDrawer(false)} to="/app">
+            <Link onClick={() => setShowDrawer(false)} to="/http://www.sqeapp.com">
               The App
             </Link>
 
