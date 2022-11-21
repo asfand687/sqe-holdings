@@ -1,13 +1,49 @@
 import React from 'react'
-import ContactHero from '../sections/ContactHero'
+import RegisterSectionTitle from '../components/RegisterSectionTitle'
+import { ReactComponent as InputPolygon } from '../assets/RegistrationInputPolygon.svg'
+import { ReactComponent as TextboxPolygon } from '../assets/contact-textbox.svg'
+
 
 const Contact = () => {
   return (
-    <main className="bg-[#030B31] pt-10 md:h-[140vh] relative">
-      <div className="absolute left-0 top-0 w-full max-w-[1550px] contact-hero-bg h-[700px] z-0"></div>
-      <div className="absolute left-0 top-0 w-full max-w-[1550px] contact-bottom-bg h-[1000px] z-0"></div>
-      <ContactHero />
-    </main>
+    <section className="bg-[#011842] relative">
+      <RegisterSectionTitle className="pre-register__heading-gradient pt-10 pb-12" text={"Contact"} />
+      <div className="w-full max-w-[40rem] mx-auto pb-20">
+        <form className="space-y-3">
+          <div className="space-y-2 relative text-[#46CEEC] font-semibold">
+            <InputPolygon className="absolute  md:w-full top-6 left-0" />
+            <input
+              type="text"
+              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4 relative z-10 top-[9px] left-8 placeholder:text-[#46CEEC]" placeholder="NAME" required />
+            <p className="pt-1 pl-[46px] uppercase">Name</p>
+          </div>
+
+          <div className="space-y-2 relative text-[#46CEEC] font-semibold">
+            <InputPolygon className="absolute  md:w-full top-6 left-0" />
+            <input
+              type="text"
+              className="w-full h-[61px] bg-transparent rounded-[30px] outline-none px-4 relative z-10 top-[9px] left-8 placeholder:text-[#46CEEC]" placeholder="EMAIL" required />
+            <p className="pt-1 pl-[46px] uppercase">Email</p>
+          </div>
+
+          <div className="space-y-2 relative text-[#46CEEC] font-semibold max-w-[650px]">
+            <TextboxPolygon className="w-full absolute -top-16" />
+            <textarea style={{ resize: "none" }} className="w-full h-[200px] bg-transparent p-8 relative z-10 outline-0" placeholder='How Can We Help You?'></textarea>
+            <p className="pt-1 pl-[46px] uppercase">Message</p>
+          </div>
+
+          <div className="pt-8 flex justify-center">
+            <button type="submit">
+              <div className="w-[350px] h-[90px] clip-primary bg-gradient flex justify-center items-center">
+                <div className="w-[345px] h-[85px] clip-primary bg-[#011842] flex items-center justify-center">
+                  <span className="uppercase font-bold bg-gradient text-lg text-gradient">Submit</span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
   )
 }
 

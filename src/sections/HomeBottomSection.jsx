@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ReactComponent as Hexagon } from '../assets/hex-shape.svg'
 
 const HomeBottomSection = () => {
@@ -12,7 +13,7 @@ const HomeBottomSection = () => {
           <p className="uppercase text-2xl font-light">On The SQE Platform</p>
         </article>
 
-        <article className="py-10 pb-72 flex justify-center gap-x-20 flex-wrap">
+        <article className="max-w-[1450px] mx-auto py-10 pb-72 flex justify-center gap-x-20 flex-wrap">
           <div className="relative">
             <Hexagon />
             <div className="absolute w-[220px] top-24 left-[50%] transform translate-x-[-50%] space-y-4 text-center">
@@ -90,14 +91,16 @@ const HomeBottomSection = () => {
         </article>
       </div>
 
-      <article className="flex relative justify-center top-24 pb-32">
-        <button>
-          <div className="w-[350px] h-[90px] clip-primary bg-gradient flex justify-center items-center">
-            <div className="w-[345px] h-[85px] clip-primary bg-[#011132] flex items-center justify-center">
-              <span className="uppercase font-bold bg-gradient text-lg text-gradient">Get Started Now</span>
+      <article className="flex relative justify-center md:top-24 pb-32">
+        <Link to="/register">
+          <button>
+            <div className="w-[390px] h-[90px] clip-primary bg-gradient flex justify-center items-center">
+              <div className="w-[385px] h-[85px] clip-primary bg-[#011132] flex items-center justify-center">
+                <span className="uppercase font-bold bg-gradient text-lg text-gradient">Get Started Now</span>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </Link>
       </article>
     </section>
   )

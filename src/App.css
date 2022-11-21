@@ -1,4 +1,7 @@
-* {
+*,
+p,
+button,
+a {
   font-family: 'Public Sans', sans-serif;
 }
 
@@ -14,7 +17,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-
 }
 
 .flex-2 {
@@ -58,6 +60,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  .about-bottom-bg {
+    background: none;
+  }
 }
 
 .bg-about-bottom-right {
@@ -346,5 +354,22 @@
 .competitor-comparison {
   background: url("./assets/competitor-comparison-bg.png");
   background-position: right 0px top -400px;
-  background-size: 55%;
+  background-size: 75%;
+}
+
+.pre-register__heading-gradient {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  /* identical to box height */
+
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  background: radial-gradient(167.35% 167.35% at 52.31% -21.83%, #FCFEFF 44.79%, #319EDC 96.35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
 }

@@ -2,11 +2,13 @@ import React from 'react'
 import { ReactComponent as Twitter } from '../assets/twitter.svg'
 import { ReactComponent as Instagram } from '../assets/insta-big.svg'
 
+
 const ContactHero = () => {
   return (
     <section className="relative text-white z-10">
-      <div className="w-full max-w-5xl mx-auto relative z-10 py-10 pb-20">
-        <h1 className="text-5xl text-center md:text-left md:text-7xl font-semibold pt-8 font-montserrat uppercase contact__title-bg-gradient">Contact</h1>
+      <div className="w-full max-w-5xl mx-auto py-10 pb-20">
+        {/* <h1 className="text-5xl text-center md:text-left md:text-7xl font-semibold pt-8 font-montserrat uppercase pre-register__heading-gradient">Contact</h1> */}
+
       </div>
       <article className="px-4 w-full md:max-w-5xl mx-auto">
         <div className="w-full mb-8 bg-white rounded-3xl custom-shadow shadow-2xl flex justify-center items-center p-[2px] bg-gradient-contact">

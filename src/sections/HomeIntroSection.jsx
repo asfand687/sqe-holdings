@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ReactComponent as Arrow } from '../assets/arrow-right.svg'
 import HomeIntroOne from '../assets/home-intro-01.png'
 import HomeIntroTwo from '../assets/home-intro-02.png'
@@ -12,9 +13,17 @@ const HomeIntroSection = () => {
             Proof Of Entaglement
           </h2>
           <p className="pb-8 md:pl-14 text-center md:text-right">
-            Bleeding-edge technology secures SQE’s platform by Proof of Entanglement (PoE). Using less energy and more secure than Proof of Stake, Work or History, PoE keeps all your transactions private and secure.
+            Cutting-edge technology secures SQE’s platform via our
+            unique Proof of Entanglement (POE), while other platforms and
+            blockchains use methods of consensus such as Proof of Stake or Proof of
+            Work.This is why POE operates at much faster speeds and lower costs
+            per transaction.
           </p>
-          <button className="uppercase font-montserrat inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center"><span>Learn About POK</span> <Arrow /></button>
+          <Link to="/about">
+            <button className="uppercase font-montserrat inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
+              <span>Learn About POK</span> <Arrow />
+            </button>
+          </Link>
         </aside>
         <aside className="order-1 md:order-2">
           <img src={HomeIntroOne} alt="Home Intro Graphic 01" />
@@ -29,7 +38,11 @@ const HomeIntroSection = () => {
           <p className="pb-8 md:pl-14 text-center md:text-right">
             SQE’s expert team of creators has created the future of digital security through the world’s first simulated quantum entanglement driven digital platform. This patented technology has changed how security is defined on the blockchain.
           </p>
-          <button className="uppercase font-montserrat inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center"><span>Learn About S.Q.E</span> <Arrow /></button>
+          <Link to="/about">
+            <button className="uppercase font-montserrat inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
+              <span>Learn About POK</span> <Arrow />
+            </button>
+          </Link>
         </aside>
         <aside>
           <img src={HomeIntroTwo} alt="Home Intro Graphic 02" />

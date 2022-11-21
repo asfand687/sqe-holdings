@@ -1,35 +1,30 @@
 import React from 'react'
-import { ReactComponent as Arrow } from '../assets/arrow-right.svg'
 import AboutBg from '../assets/about-info-bg.png'
 import { ReactComponent as Polygon } from '../assets/polygon.svg'
+import { Link } from 'react-router-dom'
 
 
 const AboutInfo = () => {
   return (
-    <div className="pt-20 px-4">
+    <div className="pt-20 md:pt-36 px-4">
       <section className="w-full max-w-[950px] mx-auto">
-        <article className="relative">
+        <article className="relative pb-20">
           <div className="absolute -bottom-56 -left-[1550px]">
             <img src={AboutBg} alt="Background Asset" />
           </div>
           <section className="text-center md:text-left">
-            <h2 className="text-[2.6rem] md:text-[56px] leading-[3.5rem] md:leading-[4rem] w-full max-w-[50rem] font-extrabold font-montserrat uppercase">
-              Secure Quantum Exchange & Stimulated Quantum Engagement
+            <h2 className="text-[2.3rem] md:text-[56px] leading-[3.5rem] md:leading-[4rem] w-full font-extrabold font-montserrat uppercase">
+              SQE: Stimulated Quantum Entanglement
             </h2>
             <div className="opacity-80 text-2xl space-y-6 py-6 text-[#effcff]">
               <p>
-                SQE stands for Secure Quantum Exchange. This new digital world is a Quantum Secure internet security platform powered by “Simulated Quantum Entanglement”. Using SQE’s patent-pending technology (“Simulated Quantum Entanglement”), SQE components stay in a state of superposition and are linked, much like the real entanglement. The SQE network uses this bleeding-edge technology to communicate between its components with maximum efficiency. Just like with true quantum entanglement in which particles are created at the same time, SQE’s components will stay in a state of superposition until they are disturbed. Much like the real entanglement, SQE’s components (namely Links, Nodes, Servers, Mobile devices and secure cloud servers) are all linked through a mathematical entity, Cellular Automata (CA).
+                SQE is a Quantum Secure digital platform powered by our
+                patent-pending Simulated Quantum Entanglement technology, which
+                links SQE’s nodes together, allowing our mining components to
+                communicate without internet connection. SQE's entangled hardware
+                generates a different key with every transmission. Encryption keys are
+                never transmitted, therefore transactions on SQE are unhackable.
               </p>
-
-              <p>
-                This patent-pending system also means that these entanglements will be broken if there is any attempt to hack them. Using these components, SQE has created a transaction processing system that is ultra-secure. Since there are no keys required to create a transaction due to its inherent communication, therefore it is virtually impossible to hack into the SQE system. According to research and calculations made by Brown University PhDs in Mathematics, it’s more likely for a person to win the Powerball every day for a year than it is for someone to hack a single SQE transaction. We believe it’s time to raise the bar. Welcome to the future of digital security.
-              </p>
-            </div>
-            <div className="py-4">
-              <button className="uppercase inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
-                <span className="font-montserrat ">Watch A Video About S.Q.E</span>
-                <Arrow />
-              </button>
             </div>
           </section>
         </article>
@@ -42,27 +37,28 @@ const AboutInfo = () => {
               Proof Of Entanglement
             </h2>
             <p className="opacity-80 text-2xl py-6 text-[#effcff]">
-              This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is. This is detailed information about what Proof of Knowledge is.
+              SQE Holdings has introduced
+              the novel concept of Proof of Entanglement (POE) to the world of
+              blockchains. POE is the most secure mechanism by which transactions
+              between users are verified. The beauty of POE is that users don’t need to
+              transmit encryption keys to secure transactions. And because users don’t
+              need keys to authenticate, SQE’s transaction speeds are unparalleled.
             </p>
-            <div className="py-4">
-              <button className="uppercase inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
-                <span className="font-montserrat ">Watch A Video About POK</span>
-                <Arrow />
-              </button>
-            </div>
           </div>
         </article>
       </section>
 
       <section className="relative h-[90vh] bg-about-bottom-right">
         <article className="flex justify-center py-32 px-4">
-          <button>
-            <div className="w-[650px] h-[90px] clip-primary bg-gradient flex justify-center items-center">
-              <div className="w-[645px] h-[85px] clip-primary bg-[#011132] flex items-center justify-center">
-                <span className="uppercase font-bold bg-gradient text-lg text-gradient">GO TO THE VIDEO LEARNING CENTER</span>
+          <Link to="/register">
+            <button>
+              <div className="w-[580px] md:w-[650px] h-[125px] clip-primary bg-gradient flex justify-center items-center">
+                <div className="w-[575px] md:w-[645px] h-[120px] clip-primary bg-[#011132] flex items-center justify-center">
+                  <span className="uppercase font-bold bg-gradient text-lg text-gradient">Get Started On SQE</span>
+                </div>
               </div>
-            </div>
-          </button>
+            </button>
+          </Link>
         </article>
         <Polygon className="w-64" />
       </section>
