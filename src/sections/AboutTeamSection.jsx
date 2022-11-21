@@ -19,7 +19,7 @@ const AboutTeamSection = () => {
       </h2>
       <article className="py-20 gap-y-20 px-4">
         <section className="flex flex-col md:flex-row justify-center md:space-x-20">
-          <article className="flex justify-center items-center">
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
             <img src={Team01} alt="Hamid Pishdadian" className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
@@ -42,7 +42,7 @@ const AboutTeamSection = () => {
               </ul>
             </div>
           </article>
-          <article className="flex justify-center items-center">
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
             <img src={Team02} alt="Richard Genga" className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
@@ -68,7 +68,7 @@ const AboutTeamSection = () => {
         </section>
 
         <section className="flex flex-col md:flex-row justify-center md:space-x-20">
-          <article className="flex justify-center items-center">
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
             <img src={Team03} alt="Julian Quinones" className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
@@ -88,7 +88,7 @@ const AboutTeamSection = () => {
               </ul>
             </div>
           </article>
-          <article className="flex justify-center items-center">
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
             <img src={Team04} alt="Tomas Girnius" className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
@@ -111,7 +111,7 @@ const AboutTeamSection = () => {
         </section>
 
         <section className="flex flex-col md:flex-row justify-center md:space-x-20">
-          <article className="flex justify-center items-center">
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
             <img src={Team05} alt="Jade Genga" className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
@@ -134,7 +134,7 @@ const AboutTeamSection = () => {
               </ul>
             </div>
           </article>
-          <article className="flex justify-center items-center">
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
             <img src={Team06} alt="Thomas Gelfuso" className="w-72 h-72" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
