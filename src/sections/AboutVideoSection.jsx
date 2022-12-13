@@ -1,12 +1,19 @@
 import React from 'react'
 import { ReactComponent as Polygon } from '../assets/polygon.svg'
+import ReactPlayer from 'react-player'
+import AboutVideo from '../assets/about.mp4'
 
 const AboutVideoSection = () => {
   return (
-    <section className="text-white -mt-56 relative px-4">
+    <section className="text-white relative px-4 pt-20">
       <article className="flex justify-center items-center">
-        <div className="w-full max-w-5xl flex justify-center items-center bg-[#003E78] uppercase h-[500px] z-10">
-          Video
+        <div className="w-full max-w-5xl flex justify-center items-center bg-[#003E78] uppercase z-10">
+          <ReactPlayer
+            url={[AboutVideo]}
+            controls={true}
+            height="100%"
+            width="100%"
+          />
         </div>
       </article>
       <div className="flex w-full absolute -bottom-96 max-w-8xl mx-auto justify-end -mt-8">

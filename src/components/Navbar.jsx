@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import Logo from '../assets/logo-nav.png'
+import Logo from '../assets/logo-nav.svg'
 import { auth } from '../firebase'
 import { signOut } from '@firebase/auth'
 
@@ -126,20 +126,11 @@ const Navbar = () => {
             {!auth.currentUser ?
               (
                 <>
-                  <Link to="/login">
-                    <button className="-mr-20">
-                      <div className="w-[200px] h-[50px] clip-primary bg-gradient-accent flex justify-center items-center">
-                        <div className="w-[195px] h-[45px] clip-primary bg-white flex items-center justify-center">
-                          <span className="uppercase font-bold bg-gradient text-sm text-gradient">Login</span>
-                        </div>
-                      </div>
-                    </button>
-                  </Link>
                   <Link to="register">
                     <button>
-                      <div className="w-[200px] h-[50px] clip-primary bg-gradient-accent flex justify-center items-center">
-                        <div className="w-[195px] h-[45px] clip-primary bg-white flex items-center justify-center">
-                          <span className="uppercase font-bold bg-gradient text-sm text-gradient">Register</span>
+                      <div className="w-[320px] h-[60px] clip-primary bg-gradient-accent flex justify-center items-center">
+                        <div className="w-[315px] h-[55px] clip-primary bg-white flex items-center justify-center">
+                          <span className="uppercase font-bold bg-gradient text-sm text-gradient">Pre-Register Now</span>
                         </div>
                       </div>
                     </button>

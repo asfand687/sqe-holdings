@@ -2,13 +2,20 @@ import React from 'react'
 import { ReactComponent as CheckboxPolygon } from '../assets/checkbox-polygon.svg'
 import { ReactComponent as Info } from '../assets/info-icon.svg'
 
-const Checkbox = ({ onChange, label, info, right, infoPos, showInfo, showInfoToggle }) => {
+const Checkbox = ({ onChange, label, info, right, infoPos, showInfo, showInfoToggle, list }) => {
   return (
     <article className="checkbox-container relative md:block">
       <div className={`absolute ${right}`}>
         <Info onClick={showInfoToggle} className="w-6 cursor-pointer hidden md:block" />
       </div>
-      <div className={`absolute border border-gray-300 bg-[#071328] w-[300px] z-50 h-32 text-sm rounded-xl ${infoPos} ${showInfo ? "block" : "hidden"}`}>{info}</div>
+      <div className={`absolute border border-gray-300 bg-[#071328] w-[300px] z-50 text-sm rounded-xl ${infoPos} ${showInfo ? "block" : "hidden"}`}>
+        <p>{info}</p>
+        <ul className="list-disc pt-2">
+          {list && list.map((item, i) => (
+            <li className="ml-4" key={i}>{item}</li>
+          ))}
+        </ul>
+      </div>
       <label className="inline-flex items-center ">
         <CheckboxPolygon className="absolute md:-left-[2px] w-6 z-20" />
         <input onChange={onChange} type="checkbox" className="checkbox-round" />

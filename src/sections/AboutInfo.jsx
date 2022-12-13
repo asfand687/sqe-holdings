@@ -14,7 +14,7 @@ const AboutInfo = () => {
           </div>
           <section className="text-center md:text-left">
             <h2 className="text-[2.3rem] md:text-[56px] leading-[3.5rem] md:leading-[4rem] w-full font-extrabold font-montserrat uppercase">
-              SQE: Stimulated Quantum Entanglement
+              SQE: Simulated Quantum Entanglement
             </h2>
             <div className="opacity-80 text-2xl space-y-6 py-6 text-[#effcff]">
               <p>

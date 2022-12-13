@@ -12,7 +12,7 @@ const HomeCompetitorComparisonSection = () => {
           <div className="w-full max-w-7xl mx-auto space-y-14 px-4">
             <img src={ComparisonTable} alt="Comparison Table" />
           </div>
-          <p className="text-[#666666] text-[8px] tracking-widest">*Based on statistics provided by the companies themselves  on each company’s business website.</p>
+          <p className="text-[#666666] text-[8px] tracking-widest uppercase">*Based on statistics provided by the companies themselves  on each company’s business website.</p>
         </article>
       </div >
     </section >

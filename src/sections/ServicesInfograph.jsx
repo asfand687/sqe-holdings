@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 let servicesData = [
   {
@@ -38,7 +39,7 @@ let servicesData = [
 const ServicesInfograph = () => {
   const [selectedService, setSelectedService] = useState(servicesData[0])
   return (
-    <div className="px-4 mx-auto lg:max-w-[1450px] -space-y-20 pt-72 pb-8 text-white">
+    <div className="relative z-10 px-4 mx-auto lg:max-w-[1450px] -space-y-20 pt-36 pb-8 text-white">
 
       <article className="flex flex-col md:flex-row justify-center lg:space-x-36">
         <div onClick={() => setSelectedService(servicesData[0])} className={`bg-hex w-[336px] h-[378px] flex items-center cursor-pointer ${selectedService.title === servicesData[0].title ? 'clr-white' : ''}`}>
@@ -129,13 +130,15 @@ const ServicesInfograph = () => {
             }
 
             <div className="flex justify-center">
-              <button className="mt-2 absolute top-[370px]">
-                <div className="hexagon w-[120px] h-[63px] flex justify-center items-center bg-gradient">
-                  <div className={`hexagon w-[115px] h-[58px] uppercase flex items-center justify-center bg-[#02376F] '}`}>
-                    <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+              <Link className="block" to="/register">
+                <button className="mt-6 top-[370px]">
+                  <div className="hexagon w-[120px] h-[63px] flex justify-center items-center bg-gradient">
+                    <div className={`hexagon w-[115px] h-[58px] uppercase flex items-center justify-center bg-[#02376F] '}`}>
+                      <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

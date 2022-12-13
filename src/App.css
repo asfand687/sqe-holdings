@@ -373,3 +373,19 @@ a {
   text-fill-color: transparent;
 
 }
+.home-hero::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 780px;
+  height: 1000px;
+  background: url('./assets/home-hero-bg.png');
+}
+
+@media screen and (max-width: 450px) {
+  .home-hero::after {
+    display: none;
+  }
+}

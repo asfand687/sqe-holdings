@@ -14,7 +14,7 @@ const Footer = () => {
             About
           </h2>
           <p>
-            <Link to="/about" className="font-light">
+            <Link to="/" className="font-light">
               SQE
             </Link>
           </p>
@@ -71,9 +71,6 @@ const Footer = () => {
             <a href="https://instagram.com/securequantum">
               <img className="w-8" src={Instagram} alt="Instagram" />
             </a>
-            <button>
-              <img className="w-8" src={Linkedin} alt="Linkedin" />
-            </button>
             <a href="https://twitter.com/securequantum">
               <img className="w-8" src={Twitter} alt="Twitter" />
             </a>

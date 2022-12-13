@@ -7,6 +7,10 @@ import Team03 from '../assets/team-03.png'
 import Team04 from '../assets/team-04.png'
 import Team05 from '../assets/team-05.png'
 import Team06 from '../assets/team-06.png'
+import Team07 from '../assets/team-07.png'
+import Team08 from '../assets/team-08.png'
+import Team09 from '../assets/team-09.png'
+import Team10 from '../assets/team-10.png'
 
 const AboutTeamSection = () => {
   return (
@@ -17,14 +21,14 @@ const AboutTeamSection = () => {
       <h2 className="font-black text-center hero-text text-[2.5rem] whitespace-nowrap md:text-7xl 2xl:text-8xl font-montserrat uppercase">
         The SQE Team
       </h2>
-      <article className="py-20 gap-y-20 px-4">
+      <article className="py-20 space-y-10 px-4">
         <section className="flex flex-col md:flex-row justify-center md:space-x-20">
-          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
-            <img src={Team01} alt="Hamid Pishdadian" className="w-72 h-72" />
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team01} alt="Hamid Pishdadian" className="w-72 h-72 -mt-12" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
                 <h2 className="font-bold">Hamid Pishdadian</h2>
-                <p className="italic pb-4">CEO & Creator</p>
+                <p className="italic pb-4">CEO & Co-Founder</p>
               </div>
               <ul className='list-disc pl-4'>
                 <li>
@@ -42,12 +46,12 @@ const AboutTeamSection = () => {
               </ul>
             </div>
           </article>
-          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
-            <img src={Team02} alt="Richard Genga" className="w-72 h-72" />
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team02} alt="Richard Genga" className="w-72 h-72 -mt-12" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
                 <h2 className="font-bold">Richard Genga</h2>
-                <p className="italic pb-4">CEO & Creator</p>
+                <p className="italic pb-4">CFO & Co-Founder</p>
               </div>
               <ul className='list-disc pl-4'>
                 <li>
@@ -68,8 +72,58 @@ const AboutTeamSection = () => {
         </section>
 
         <section className="flex flex-col md:flex-row justify-center md:space-x-20">
-          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
-            <img src={Team03} alt="Julian Quinones" className="w-72 h-72" />
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team03} alt="Akram Khalis" className="w-72 h-72 -mt-12" />
+            <div className="max-w-[250px] text-base leading-5">
+              <div className="uppercase">
+                <h2 className="font-bold">Akram Khalis</h2>
+                <p className="italic pb-4">CTO & Co-Founder</p>
+              </div>
+              <ul className='list-disc pl-4'>
+                <li>
+                  15+ years leader, and a product digital transformation executive with a visionary mindset
+                </li>
+                <li>
+                  Holds several United States patents
+                </li>
+                <li>
+                  AWS and Networking Expert
+                </li>
+                <li>
+                  Holds a special electronic and electrical engineering with mechanical minor degree from Morocco & BS in Electrical Engineering from NJIT
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team07} alt="Joe Scalise" className="w-72 h-72 -mt-12" />
+            <div className="max-w-[250px] text-base leading-5">
+              <div className="uppercase">
+                <h2 className="font-bold">Joseph Scalice</h2>
+                <p className="italic pb-4">Director Of Marketing</p>
+              </div>
+              <ul className='list-disc pl-4'>
+                <li>
+                  Bryant University Graduate
+                </li>
+                <li>
+                  15 years sales and marketing experience
+                </li>
+                <li>
+                  Involved in the Crypto and Blockchain space since 2016
+                </li>
+                <li>
+                  Passionate about SQE and our mission
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section className="flex flex-col md:flex-row justify-center md:space-x-20">
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team08} alt="Julian Quinones" className="w-72 h-72 -mt-12" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
                 <h2 className="font-bold">Julian Quinones</h2>
@@ -77,19 +131,21 @@ const AboutTeamSection = () => {
               </div>
               <ul className='list-disc pl-4'>
                 <li>
-                  Molecular biologist for 10 years of experience in biotech
+                  Biotech industry vet with 10 years of drug discovery & development experience including helping to take a prominent biotech from startup to IPO to commercial
                 </li>
                 <li>
-                  8+ years at Moderna Entrepreneur, business & scientific advisor
+                  Expertise in scientific & medical data collection and management
                 </li>
                 <li>
-                  Expert in health & medical industry
+                  Entrepreneur focused on environmentally sustainable businesses
                 </li>
               </ul>
             </div>
           </article>
-          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
-            <img src={Team04} alt="Tomas Girnius" className="w-72 h-72" />
+
+
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team04} alt="Tomas Girnius" className="w-72 h-72 -mt-12" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
                 <h2 className="font-bold">Tomas Girnius</h2>
@@ -111,8 +167,8 @@ const AboutTeamSection = () => {
         </section>
 
         <section className="flex flex-col md:flex-row justify-center md:space-x-20">
-          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
-            <img src={Team05} alt="Jade Genga" className="w-72 h-72" />
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team05} alt="Jade Genga" className="w-72 h-72 -mt-12" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
                 <h2 className="font-bold">Jade Genga</h2>
@@ -134,8 +190,8 @@ const AboutTeamSection = () => {
               </ul>
             </div>
           </article>
-          <article className="flex flex-col md:flex-row text-center md:text-left justify-center items-center">
-            <img src={Team06} alt="Thomas Gelfuso" className="w-72 h-72" />
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team06} alt="Thomas Gelfuso" className="w-72 h-72 -mt-12" />
             <div className="max-w-[250px] text-base leading-5">
               <div className="uppercase">
                 <h2 className="font-bold">Thomas Gelfuso</h2>
@@ -150,6 +206,52 @@ const AboutTeamSection = () => {
                 </li>
                 <li>
                   Expert in project management, quality control, and IT procedures & policies
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section className="flex flex-col md:flex-row justify-center md:space-x-20">
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team09} alt="Felicia Morales" className="w-72 h-72 -mt-12" />
+            <div className="max-w-[250px] text-base leading-5">
+              <div className="uppercase">
+                <h2 className="font-bold">Felicia Morales</h2>
+                <p className="italic pb-4">Social Media Advisor</p>
+              </div>
+              <ul className='list-disc pl-4'>
+                <li>
+                  BA in political science & human rights
+                </li>
+                <li>
+                  11 years in the Air Force in optometry, 2 years as an equal opportunity specialist
+                </li>
+                <li>
+                  Entrepreneur with years in e-commerce & freelance social media
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article className="flex flex-col md:flex-row text-center md:text-left justify-center">
+            <img src={Team10} alt="Erica Pishdadian" className="w-72 h-72 -mt-12" />
+            <div className="max-w-[250px] text-base leading-5">
+              <div className="uppercase">
+                <h2 className="font-bold">Erica Pishdadian</h2>
+                <p className="italic pb-4">Content Consultant</p>
+              </div>
+              <ul className='list-disc pl-4'>
+                <li>
+                  Peabody Award-winning media professional
+                </li>
+                <li>
+                  8+ years in editorial, content management and video production
+                </li>
+                <li>
+                  TV producer for a top-rated, national broadcast
+                </li>
+                <li>
+                  Writing professional and editor with numerous bylines in national publications
                 </li>
               </ul>
             </div>

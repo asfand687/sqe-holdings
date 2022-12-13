@@ -10,18 +10,14 @@ const HomeIntroSection = () => {
       <article className="flex flex-col md:flex-row justify-center items-center lg:space-x-8 px-4">
         <aside className="order-2 md:order-1 md:text-right max-w-[640px]">
           <h2 className="text-center md:text-right text-4xl md:text-6xl font-black uppercase md:leading-[70px] pb-4">
-            Proof Of Entaglement
+            Proof Of Entanglement
           </h2>
           <p className="pb-8 md:pl-14 text-center md:text-right">
-            Cutting-edge technology secures SQE’s platform via our
-            unique Proof of Entanglement (POE), while other platforms and
-            blockchains use methods of consensus such as Proof of Stake or Proof of
-            Work.This is why POE operates at much faster speeds and lower costs
-            per transaction.
+            Cutting-edge technology secures SQE’s platform via our unique Proof of Entanglement (POE), while other platforms and blockchains use methods of consensus such as Proof of Stake or Proof of Work.This is why POE operates at much faster speeds and lower costs per transaction.
           </p>
           <Link to="/about">
             <button className="uppercase font-montserrat inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
-              <span>Learn About POK</span> <Arrow />
+              <span>Learn About POE</span> <Arrow />
             </button>
           </Link>
         </aside>
@@ -36,11 +32,11 @@ const HomeIntroSection = () => {
             Simulated Quantum Entanglement
           </h2>
           <p className="pb-8 md:pl-14 text-center md:text-right">
-            SQE’s expert team of creators has created the future of digital security through the world’s first simulated quantum entanglement driven digital platform. This patented technology has changed how security is defined on the blockchain.
+            SQE has created the future of digital security through the world’s first simulated quantum entanglement platform. This patent-pending technology has changed how security is defined on the blockchain.
           </p>
           <Link to="/about">
             <button className="uppercase font-montserrat inline-flex text-2xl font-extrabold space-x-10 text-[#46CEEC] items-center">
-              <span>Learn About POK</span> <Arrow />
+              <span>Learn About SQE</span> <Arrow />
             </button>
           </Link>
         </aside>

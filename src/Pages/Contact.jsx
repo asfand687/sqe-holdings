@@ -1,13 +1,19 @@
-import React from 'react'
-import RegisterSectionTitle from '../components/RegisterSectionTitle'
+import React, { useEffect } from 'react'
 import { ReactComponent as InputPolygon } from '../assets/RegistrationInputPolygon.svg'
 import { ReactComponent as TextboxPolygon } from '../assets/contact-textbox.svg'
+import { ReactComponent as ContactTitle } from '../assets/contact-title.svg'
 
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   return (
     <section className="bg-[#011842] relative px-4">
-      <RegisterSectionTitle className="pre-register__heading-gradient pt-10 pb-12" text={"Contact"} />
+      <div className="flex justify-center py-10 w-full max-w-[450px] mx-auto">
+        <ContactTitle className="w-full" />
+      </div>
       <div className="w-full max-w-[40rem] mx-auto pb-20">
         <form className="space-y-3">
           <div className="space-y-2 relative text-[#46CEEC] font-semibold">
@@ -26,7 +32,7 @@ const Contact = () => {
 
           <div className="space-y-2 relative text-[#46CEEC] font-semibold max-w-[650px]">
             <TextboxPolygon className="w-full absolute -top-24 md:-top-8" />
-            <textarea style={{ resize: "none" }} className="w-full h-[200px] bg-transparent px-8 py-14 md:px-8 md:py-16 relative z-10 outline-0" placeholder='How Can We Help You?'></textarea>
+            <textarea style={{ resize: "none" }} className="w-full h-[200px] placeholder:uppercase placeholder:text-[#46CEEC] bg-transparent px-8 py-14 md:px-8 md:py-16 relative z-10 outline-0" placeholder='How Can We Help You?'></textarea>
           </div>
 
           <div className="pt-20 flex justify-center">

@@ -22,7 +22,7 @@ const ContactHero = () => {
                 <input type="email" placeholder="email" className="flex-1 bg-transparent border-2 text-lg font-medium outline-none placeholder-white border-white rounded-full p-2 px-4" />
                 <input type="text" placeholder="subject" className="flex-1 bg-transparent border-2 text-lg font-medium outline-none placeholder-white border-white rounded-full p-2 px-4" />
               </article>
-              <textarea className="w-full text-lg rounded-xl px-4 bg-transparent border-2 placeholder-white outline-none border-white" rows="7" placeholder='message'> </textarea>
+              <textarea className="w-full text-lg rounded-xl px-4 bg-transparent border-2 placeholder-white uppercase outline-none border-white" rows="7" placeholder='message'> </textarea>
               <button type="submit" className="w-full rounded-full py-3 bg-white text-black text-lg font-bold">Submit</button>
             </form>
             <div className="py-4 flex flex-col md:flex-row justify-between">

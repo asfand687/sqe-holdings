@@ -19,13 +19,15 @@ const HomeBottomSection = () => {
             <div className="absolute w-[220px] top-24 left-[50%] transform translate-x-[-50%] space-y-4 text-center">
               <h2 className="text-2xl font-montserrat font-bold uppercase">Communicate</h2>
               <p className="font-light text-lg leading-5">Secure Messaging powered by simulated quantum entanglement.</p>
-              <button>
-                <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
-                  <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
-                    <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+              <Link to="/services" className="block">
+                <button>
+                  <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
+                    <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
+                      <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -34,13 +36,15 @@ const HomeBottomSection = () => {
             <div className="absolute w-[220px] top-24 left-[50%] transform translate-x-[-50%] space-y-2 text-center">
               <h2 className="text-2xl font-montserrat font-bold uppercase pb-0">Create</h2>
               <p className="font-light leading-5 pb-2 text-lg">Create no-code apps and smart contracts on a user-friendly, quantum-secure platform. </p>
-              <button>
-                <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
-                  <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
-                    <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+              <Link to="/services" className="block">
+                <button>
+                  <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
+                    <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
+                      <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -49,13 +53,15 @@ const HomeBottomSection = () => {
             <div className="absolute w-[220px] top-24 left-[50%] transform translate-x-[-50%] space-y-4 text-center">
               <h2 className="text-2xl font-montserrat font-bold uppercase">Exchange</h2>
               <p className="font-light text-lg leading-5">Invest, buy & sell SQC, the world’s most secure semi-stable crypto.</p>
-              <button>
-                <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
-                  <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
-                    <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+              <Link to="/services" className="block">
+                <button>
+                  <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
+                    <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
+                      <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -64,13 +70,15 @@ const HomeBottomSection = () => {
             <div className="absolute w-[220px] top-24 left-[50%] transform translate-x-[-50%] space-y-4 text-center">
               <h2 className="text-2xl font-montserrat font-bold uppercase">Game</h2>
               <p className="font-light text-lg leading-5">Play, wager, and explore an expanding world of secure, ad free gaming.</p>
-              <button>
-                <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
-                  <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
-                    <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+              <Link to="/services" className="block">
+                <button>
+                  <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
+                    <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
+                      <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -79,13 +87,15 @@ const HomeBottomSection = () => {
             <div className="absolute w-[220px] top-24 left-[50%] transform translate-x-[-50%] space-y-4 text-center">
               <h2 className="text-2xl font-montserrat font-bold uppercase">Automate</h2>
               <p className="font-light text-lg leading-5">Personal Digital Assistant (PDA) uses Web3 tech to automate your critical everyday tasks.</p>
-              <button>
-                <div className="hexagon -mt-2 w-[90px] h-[53px] flex justify-center items-center bg-gradient">
-                  <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
-                    <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+              <Link to="/services" className="block">
+                <button>
+                  <div className="hexagon w-[90px] h-[53px] flex justify-center items-center bg-gradient">
+                    <div className="hexagon w-[85px] h-[48px] bg-[#021943] uppercase flex items-center justify-center">
+                      <h2 className="uppercase bg-gradient text-gradient font-semibold">More</h2>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
         </article>

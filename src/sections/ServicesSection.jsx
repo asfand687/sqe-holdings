@@ -5,7 +5,7 @@ import HomeServicesBottomHeading from '../assets/home-services-bottom-heading.pn
 const ServicesSection = () => {
   return (
     <section className="text-white relative bg-[#002660] bg-opacity-50 py-10 px-4">
-      <img className="w-full max-w-[1150px] px-4 mx-auto pt-10 pb-32" src={HomeServicesBottomHeading} alt="Stimuilated Quantum Entaglement at Work" />
+      <img className="w-full max-w-[1150px] px-4 mx-auto pt-10 pb-32" src={HomeServicesBottomHeading} alt="Simulated Quantum Entaglement at Work" />
       <section className="">
         <article>
           <img className="w-full mx-auto max-w-[1200px]" src={ServicesGraphics} alt="Services Infographics" />

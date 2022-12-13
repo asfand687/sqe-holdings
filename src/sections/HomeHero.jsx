@@ -4,8 +4,8 @@ import HeroHeading from '../assets/home-hero-heading.png'
 
 const HomeHero = () => {
   return (
-    <section className="pt-20 text-white">
-      <article className="mx-auto flex flex-col items-center">
+    <section className="pt-20 relative text-white md:h-screen home-hero">
+      <article className="mx-auto relative z-10 flex flex-col items-center">
         <h3 className="font-medium text-2xl tracking-widest text-[#EFFCFF] opacity-80">WELCOME TO SQE</h3>
         <img className="py-4 px-4" src={HeroHeading} alt="Your World. Quantum Secure" />
         <p className="font-medium text-2xl max-w-[53rem] mx-auto text-center leading-7  pb-16 px-4">
@@ -21,8 +21,6 @@ const HomeHero = () => {
           </button>
         </Link>
       </article>
-      <section className="hero-bg md:h-[1380px] md:-mt-64">
-      </section>
     </section>
   )
 }

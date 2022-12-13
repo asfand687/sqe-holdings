@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HomeHero from '../sections/HomeHero'
 import HomeBottomSection from '../sections/HomeBottomSection'
 import HomeMainSection from '../sections/HomeMainSection'
@@ -8,6 +8,9 @@ import HomeCompetitorComparisonSection from '../sections/HomeCompetitorCompariso
 
 
 const Homepage = () => {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
   return (
     <main className="bg-[#011132]">
       <img className="absolute left-0 top-[2560px]" src={ImageLeft} alt="background" />

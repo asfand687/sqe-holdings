@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import RegisterSectionTitle from '../components/RegisterSectionTitle'
 import { useNavigate } from 'react-router-dom'
 import { ReactComponent as InputPolygon } from '../assets/RegistrationInputPolygon.svg'
@@ -41,6 +41,10 @@ const Login = () => {
       }
     }
   }
+
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
 
   return (
     <section className="bg-[#081233] p-4 pb-16  lg:px-6 text-white min-h-[calc(100vh-190px)]">
