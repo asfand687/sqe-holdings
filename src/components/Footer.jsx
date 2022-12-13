@@ -1,7 +1,6 @@
 import React from 'react'
 import Instagram from '../assets/insta.svg'
 import Facebook from '../assets/facebook.svg'
-import Linkedin from '../assets/linkedin.svg'
 import Twitter from '../assets/twitter.svg'
 import { Link } from 'react-router-dom'
 
